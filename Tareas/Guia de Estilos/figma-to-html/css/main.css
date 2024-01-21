@@ -1,0 +1,53 @@
+html{
+  background-color: rgba(17,16,16,1);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+.v1_2 {
+  width: 100%;
+  height: 1024px;
+  background: rgba(17,16,16,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v1_4 {
+  width: 100%;
+  height: 59px;
+  background: rgba(250,172,22,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  color: white ;
+}
+.v1_5 {
+  width: 100%;
+  height: 118px;
+  background: rgba(195,131,34,1);
+  opacity: 1;
+  position: absolute;
+  top: 113px;
+  left: 9px;
+  overflow: hidden;
+  color : white ; 
+  text-align: center;
+  font-size: 40px;
+}
+.v1_6 {
+  width: 100%;
+  height: 73px;
+  background: rgba(134,130,130,1);
+  opacity: 1;
+  position: absolute;
+  top: 951px;
+  left: 9px;
+  overflow: hidden;
+}
