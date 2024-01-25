@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Formularios</title>
+    <style>
+        html{
+            background-color: black;
+            color: yellow;  
+            font-size: 40px;
+        }
+        .texto{
+            background-color: black;
+            color: yellow;
+            width: 150px;
+            height: 21px;
+            border-color: yellow;
+        }
+        .boton{
+            background-color: black;
+            border-color: yellow;
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="titulo">
+            <h1>Fomularios Html</h1>
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <label for="Nombre"> Nombre : </label>
+            <input type="text" id="Nombre" name="Nombre" placeholder="Ejem : Juan" class="texto">
+            <br>
+            <label for="Correo" > Correo : </label>
+            <input type="email" name="correo" id="Correo" placeholder="Ejem : exameple@hotmail.com" class="texto">
+            <br>
+            <label for="Contaseña"> Contraseña : </label>
+            <input type="password" name="Contaseña" id="Contaseña" class="texto">
+            <br>
+            <label for="boton">Boton</label>
+            <input type="submit" class="boton" name="boton" id="boton" title="presioname">
+            <br>
+            <label for="radio">Radio</label>
+            <br>
+            <input type="radio" id="radio" name="radio">Hombre
+            <input type="radio" name="radio2" id="radio">Mujer
+            <br>
+            <label for="caja">Check</label>
+            <input type="checkbox" name="caja " id="caja">Presiona
+            <br>
+            <label for="carga">Carga un archivo</label>
+            <input type="file" name="carga" id="carga" class="carga">
+        </form>
+    </main>
+    
+</body>
+</html>
