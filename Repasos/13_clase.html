@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        html{
+            background-color: black;
+            color : cyan; 
+        }
+        .campos{
+            background-color: black;
+            border-color: cyan;
+            color: cyan;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Formularios 2</h1>
+        <br>
+        <p>En esta clase veremos lo que son los metodos action , method , areatext</p>
+        <br>
+        <h2>Inicia </h2>
+        <form action="/formulario" method="get">
+            <label for="nombre "> Nombre : </label>
+            <input type="text" id="nombre" name="nombre" class="campos">
+            <br>
+            <br>
+            <label for="apellido"> Apellido : </label>
+            <input type="text" name="apellido" id="apellido" class="campos">
+            <br>
+            <br>
+            <label for="comentario">Comentarios : </label>
+            <textarea rows="10" cols="30" class="campos" placeholder="comentario" id="comentario" name="comentario"></textarea>
+            <br>
+            <br>
+            <input type="submit" class="campos" >
+        </form>
+
+    </header>
+</body>
+</html>
