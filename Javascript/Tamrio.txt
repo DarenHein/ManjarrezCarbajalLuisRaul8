@@ -1,0 +1,91 @@
+Claro, aquí tienes un temario básico para aprender JavaScript desde cero. Puedes seguir estos puntos como una guía de estudio:
+
+### Módulo 1: Introducción a JavaScript
+1.1 **¿Qué es JavaScript?**
+   - Breve historia y contexto.
+   - Usos comunes y aplicaciones.
+
+1.2 **Configuración del entorno de desarrollo**
+   - Instalación de un navegador web.
+   - Uso de la consola del navegador.
+
+1.3 **Primeros pasos con JavaScript**
+   - Sintaxis básica.
+   - Variables y tipos de datos.
+   - Operadores.
+
+### Módulo 2: Estructuras de control
+2.1 **Condicionales**
+   - If, else if, else.
+   - Switch.
+
+2.2 **Bucles**
+   - For, while, do-while.
+   - Control de bucles (break, continue).
+
+### Módulo 3: Funciones
+3.1 **Definición y llamada de funciones**
+   - Parámetros y argumentos.
+   - Retorno de valores.
+
+3.2 **Ámbito de las variables**
+   - Variables locales y globales.
+   - Cierre (closures).
+
+### Módulo 4: Objetos y Arrays
+4.1 **Objetos**
+   - Creación y manipulación.
+   - Propiedades y métodos.
+
+4.2 **Arrays**
+   - Creación y manipulación.
+   - Iteración sobre arrays.
+
+### Módulo 5: Manipulación del DOM
+5.1 **Introducción al DOM (Document Object Model)**
+   - Selección de elementos.
+   - Manipulación de contenido.
+
+5.2 **Eventos**
+   - Tipos de eventos.
+   - Manejadores de eventos.
+
+### Módulo 6: Asincronía en JavaScript
+6.1 **Callback Functions**
+   - Concepto y uso.
+
+6.2 **Promesas**
+   - Creación y manejo de promesas.
+   - Encadenamiento de promesas.
+
+6.3 **Async/Await**
+   - Uso de async/await para manejar operaciones asíncronas.
+
+### Módulo 7: AJAX y Fetch API
+7.1 **Introducción a AJAX**
+   - Concepto y uso.
+
+7.2 **Fetch API**
+   - Realización de peticiones HTTP.
+   - Tratamiento de respuestas.
+
+### Módulo 8: Introducción a ES6+
+8.1 **Nuevas características de ES6+**
+   - Let y const.
+   - Arrow functions.
+   - Template literals.
+   - Destructuring.
+   - Clases.
+
+### Módulo 9: Gestión de errores
+9.1 **Manejo de excepciones**
+   - Try, catch, finally.
+   - Lanzamiento de errores.
+
+9.2 **Depuración de código**
+   - Uso de consola y herramientas de desarrollo del navegador.
+
+### Proyecto Final
+- Desarrolla un pequeño proyecto que integre los conceptos aprendidos, como una aplicación web simple.
+
+Este temario proporciona una base sólida para principiantes en JavaScript. A medida que avanzas, puedes explorar temas más avanzados y frameworks como React, Angular o Vue.js, dependiendo de tus intereses y necesidades.
