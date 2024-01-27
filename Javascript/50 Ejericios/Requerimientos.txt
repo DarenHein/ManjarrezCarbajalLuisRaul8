@@ -1,0 +1,54 @@
+¡Claro! Aquí tienes 50 títulos de ejercicios o algoritmos que puedes resolver en JavaScript para practicar:
+
+1. **Suma de Números Pares**
+2. **Verificar Palíndromos**
+3. **Contar Palabras en una Cadena**
+4. **Cálculo de la Media de un Array**
+5. **Buscar el Número Mayor en una Matriz**
+6. **Encontrar Números Primos en un Rango**
+7. **Invertir las Palabras de una Cadena**
+8. **Generar Secuencia de Números Primos**
+9. **Filtrar Números Pares de un Array**
+10. **Cifrado César**
+11. **Contar Letras Repetidas en una Cadena**
+12. **Generar un Triángulo de Pascal**
+13. **Determinar si un Año es Bisiesto**
+14. **Encontrar la Longitud de la Cadena Más Larga en un Array de Cadenas**
+15. **Contar Dígitos de un Número**
+16. **Contar Espacios en Blanco en una Cadena**
+17. **Calcular el Factorial de un Número sin Recursión**
+18. **Eliminar Elementos Duplicados de un Array**
+19. **Encontrar la Suma de Números Amigables en un Rango**
+20. **Validar una Dirección de Correo Electrónico**
+21. **Calcular la Distancia Entre Dos Puntos en un Plano Cartesiano**
+22. **Encontrar el Máximo Común Divisor (MCD) de Dos Números**
+23. **Buscar la Subcadena Más Larga en una Cadena**
+24. **Verificar si una Cadena Tiene Todos los Caracteres Únicos**
+25. **Suma de Números en un Rango con Pasos Específicos**
+26. **Encontrar el Número Menor No Repetido en un Array**
+27. **Revertir las Palabras de una Cadena sin Invertir las Letras**
+28. **Contar la Frecuencia de Cada Carácter en una Cadena**
+29. **Ordenar un Array de Objetos por una Propiedad Específica**
+30. **Validar un Número de Tarjeta de Crédito**
+31. **Calcular el Área de un Triángulo Dada su Base y Altura**
+32. **Generar Números Aleatorios en un Rango Específico**
+33. **Eliminar Elementos Menores a un Valor en un Array**
+34. **Contar los Días Hasta una Fecha Específica**
+35. **Sumar los Números de un Array hasta que se Cumpla una Condición**
+36. **Calcular el Producto de Dos Matrices**
+37. **Verificar si Dos Palabras son Anagramas**
+38. **Calcular el Tiempo Transcurrido Entre Dos Fechas**
+39. **Reemplazar Espacios en Blanco con Guión Bajo en una Cadena**
+40. **Contar la Cantidad de Bits de Valor 1 en un Número Binario**
+41. **Convertir Grados Celsius a Fahrenheit**
+42. **Validar una Contraseña (Requisitos Específicos)**
+43. **Calcular el Área de un Círculo Dada su Circunferencia**
+44. **Generar una Serie de Fibonacci Recursiva**
+45. **Contar la Cantidad de Elementos Mayores a un Valor en un Array**
+46. **Dividir una Cadena en Palabras y Contarlas**
+47. **Verificar si Dos Matrices Son Iguales**
+48. **Calcular el Dígito de Control de un Número de Cuenta Bancaria**
+49. **Encontrar el Número de Euler (e) a N Decimales**
+50. **Determinar si Dos Cadenas son Anagramas Palindrómicos**
+
+Estos ejercicios abarcan una variedad de conceptos y te proporcionarán una excelente práctica para mejorar tus habilidades en JavaScript. ¡Disfruta resolviéndolos!
