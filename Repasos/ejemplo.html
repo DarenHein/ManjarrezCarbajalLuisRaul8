@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación de Colores por Letra</title>
+    <style>
+        html {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="colorPorLetra">Hola</h1>
+
+    <script>
+        function cambiarColorPorLetra(elementoId) {
+            var elemento = document.getElementById(elementoId);
+            var texto = elemento.textContent;
+
+            var colores = ['blue', 'red', 'green', 'purple'];
+
+            var indice = 0;
+
+            // Utilizar setInterval para cambiar los colores con el tiempo
+            var intervalo = setInterval(function() {
+                var contenidoConColores = '';
+
+                for (var i = 0; i < texto.length; i++) {
+                    contenidoConColores += '<span style="color: ' + colores[(i + indice) % colores.length] + ';">' + texto[i] + '</span>';
+                }
+
+                elemento.innerHTML = contenidoConColores;
+
+                // Incrementar el índice para cambiar los colores en la próxima iteración
+                indice++;
+
+                // Detener la animación después de un número de iteraciones o ajustar según sea necesario
+                if (indice === colores.length) {
+                    clearInterval(intervalo);
+                }
+            }, 500); // Cambia de color cada 500 milisegundos
+        }
+
+        cambiarColorPorLetra('colorPorLetra');
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html  {
+            background-color: gray;
+            color: aqua;
+        }
+        .campo{
+            background-color: black;
+            border-color: aqua;
+            color: aqua;
+        }
+        div{
+            position: absolute;
+            background-color: black;
+            top: 50px;
+            left: 70px;
+            width:500px;
+            height: 800px;
+            text-align: center;
+        }
+        .titulo{
+            font-size: 80px;
+        }
+        .boton{
+            background-color: black;
+            color: aqua;
+            border-color: aqua;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        
+            <h1 class="titulo">Formulario</h1>
+            <form action="/" method="post">
+
+                <label for="Nombre"> Nombre : </label>
+                <input id="nombre" type="text" class="campo" name="nombre">
+                <br>
+                <br>
+                <label for="contra">Contraseña : </label>
+                <input id="contra" name="contra" class="campo" type="password">
+                <br>
+                <br>
+                <button type="submit" class="boton">Enviar</button>
+                <br> <!--todo envia datos de fromulario como un submit -->
+                <br>
+                <button type="reset" class="boton">Resetear</button>
+                <br><!--todo resetea los campos de el fromulario-->
+                <br>
+                <button type="button" class="boton">Presioname</button> <!--todo tiene accion con codigo js -->
+
+
+            </form>
+    </div>
+
+    
+</body>
+</html>
+
+<!--todo etiqueta button y sus 3 variantes-->
