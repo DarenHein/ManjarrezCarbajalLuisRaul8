@@ -1,0 +1,87 @@
+¡Claro! Aquí tienes un temario básico para aprender CSS desde cero. Ten en cuenta que este es un punto de partida y que puedes ajustar el temario según tus necesidades y ritmo de aprendizaje.
+
+### Nivel 1: Introducción a CSS
+
+1. **¿Qué es CSS?**
+   - Definición y propósito.
+   - Relación con HTML.
+
+2. **Selección de Elementos**
+   - Selectores básicos.
+   - Selectores de clase y ID.
+
+3. **Propiedades y Valores Básicos**
+   - Color, fondo, tamaño de texto, márgenes y rellenos.
+
+4. **Box Model**
+   - Modelo de caja.
+   - Margin, Border, Padding, Content.
+
+5. **Posicionamiento**
+   - Relative, Absolute, Fixed, Static.
+   - Z-index.
+
+### Nivel 2: Avanzando en CSS
+
+6. **Flexbox**
+   - Conceptos básicos.
+   - Flex container y flex items.
+   - Propiedades flex.
+
+7. **Grid Layout**
+   - Conceptos básicos.
+   - Creación de rejillas.
+   - Propiedades de grid.
+
+8. **Transiciones y Animaciones**
+   - Transiciones CSS.
+   - Animaciones CSS.
+
+9. **Transformaciones**
+   - Rotación, escala, traslación.
+   - Skew.
+
+### Nivel 3: Mejorando la Responsividad y Estilo Avanzado
+
+10. **Media Queries**
+    - Diseño responsivo.
+    - Breakpoints.
+
+11. **Unidades Relativas y Absolutas**
+    - Em, rem, %, px.
+
+12. **Estilización de Formularios**
+    - Personalización de inputs, selects, checkboxes, etc.
+
+13. **Fuentes Personalizadas**
+    - @font-face.
+    - Google Fonts.
+
+14. **Pseudo Clases y Pseudo Elementos**
+    - :hover, :active, :nth-child, ::before, ::after.
+
+15. **Optimización de Estilo**
+    - Consolidación y minificación de archivos CSS.
+    - Herramientas de desarrollo en el navegador.
+
+### Nivel 4: Herramientas y Prácticas Avanzadas
+
+16. **Preprocesadores CSS**
+    - Introducción a Sass o Less.
+
+17. **Metodologías de CSS**
+    - BEM (Block Element Modifier).
+    - OOCSS (Object-Oriented CSS).
+
+18. **Frameworks de CSS**
+    - Bootstrap, Tailwind CSS.
+
+19. **CSS en el Mundo Real**
+    - Integración con sistemas de construcción (Webpack, Gulp).
+    - Mantenimiento de código CSS.
+
+20. **Accesibilidad en CSS**
+    - Prácticas para hacer el código accesible.
+    - Herramientas de evaluación de accesibilidad.
+
+Recuerda que la práctica constante y la construcción de proyectos reales son esenciales para consolidar tus conocimientos. Además, la documentación oficial de CSS (MDN Web Docs) será tu mejor amiga mientras aprendes y desarrollas tus habilidades. ¡Buena suerte!
