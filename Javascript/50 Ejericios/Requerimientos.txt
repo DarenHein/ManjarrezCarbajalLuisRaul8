@@ -1,8 +1,8 @@
 ¡Claro! Aquí tienes 50 títulos de ejercicios o algoritmos que puedes resolver en JavaScript para practicar:
 
-1. **Suma de Números Pares**
+1. **Suma de Números Pares** terminado 
 2. **Verificar Palíndromos**
-3. **Contar Palabras en una Cadena**
+3. **Contar Palabras en una Cadena** terminado 
 4. **Cálculo de la Media de un Array**
 5. **Buscar el Número Mayor en una Matriz**
 6. **Encontrar Números Primos en un Rango**
