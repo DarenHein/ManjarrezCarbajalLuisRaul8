@@ -10,7 +10,7 @@
 8. **Generar Secuencia de Números Primos**
 9. **Filtrar Números Pares de un Array**
 10. **Cifrado César**
-11. **Contar Letras Repetidas en una Cadena**
+11. **Contar Letras Repetidas en una Cadena** termiado
 12. **Generar un Triángulo de Pascal**
 13. **Determinar si un Año es Bisiesto**
 14. **Encontrar la Longitud de la Cadena Más Larga en un Array de Cadenas**
