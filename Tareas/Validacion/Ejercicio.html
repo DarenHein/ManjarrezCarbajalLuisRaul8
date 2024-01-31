@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            background-color: #BC5555;
+            color: white;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        .boton {
+            background-color: #2F2E2E;
+            color: #BC5555;
+            border-color: #BC5555;
+        }
+
+        .div {
+            position: absolute;
+            top: 30px;
+            left: 400px;
+            background-color: #2F2E2E;
+            width: 400px;
+            height: 1000px;
+        }
+
+        .div_boton {
+            position: absolute;
+            top: 250px;
+            left: 150px;
+        }
+    </style>
+    <script>
+        function calcular() {
+            const porcentaje = 2; // porcentaje de la persona 
+            var capital = document.getElementById("dinero").value // tomamos el campo de la persona 
+            var capital2 = parseInt(capital); // transfroamamos el dinerp a int 
+            var formula = (capital2 * porcentaje) / 100; // hacemos la formula de la lana 
+            capital2 += formula // le sumamos al dinero incial lo que le crecio  
+            var final = capital2.toString() // volvemos a transformar a string 
+            alert("Su capital sumando el %2 del mes queda en $" + final) // imprimimos un alert con el resultado final 
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="div">
+
+        <h1>Ejercicio 1</h1>
+
+        <form action="/" method="post">
+            <p>Ingresa el capital que tienes para calcular <br>cuanto crece tu dinero al mes (%2)</p>
+            <br>
+            <label for="dinero">Ingresa la cantidad : $</label>
+            <input type="text" name="dinero" id="dinero">
+            <br>
+            <div class="div_boton">
+                <button onclick="calcular()" class="boton">Calcular</button>
+            </div>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
