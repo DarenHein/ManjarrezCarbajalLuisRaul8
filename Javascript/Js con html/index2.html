@@ -1,0 +1,61 @@
+
+<!--
+
+    sacar informacion de campos de texto de html con js 
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            background-color: black;
+            color : cyan; 
+        }
+        h1{
+            text-align: center;
+            font-size: 80px;
+        }
+        .campo{
+            background-color: black;
+            border-color: cyan;
+            color: cyan;
+        }
+    </style>
+    <script>
+        function funcion() {
+                var nombre= document.getElementById("nombre").value
+                var edad= document.getElementById("edad").value
+                var apellido= document.getElementById("apellido").value
+
+                alert(nombre+edad+apellido)
+            }
+        </script>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <form action="/" method="post">
+
+        <label for="nombre">Nombre : </label>
+        <input type="text" name="nombre" id="nombre" class="campo">
+        <br>
+        <br>
+        <label for="edad">Edad : </label>
+        <input type="text" name="edad" id="edad" class="campo">
+        <br>
+        <br>
+        <label for="apellido">Apellido : </label>
+        <input type="apellido" name="apellido" id="apellido" class="campo">
+        <br>
+        <br>
+        <button class="campo" onclick="funcion()">Presioname perrro </button>
+
+
+    </form>
+    
+</body>
+</html>

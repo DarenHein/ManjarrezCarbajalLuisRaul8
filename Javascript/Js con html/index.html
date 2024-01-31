@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function funcion(){
+            var nombre = document.getElementById("nombre").value
+            // explicamdno que hacae cada una de estas cosas feoas muy feas 
+            // document -> hacee referencia al documento html de donde sacaremos las cosas 
+            // getElementById- > obtener el elemento por el id 
+            // .value accede al valor que obenetemos 
+            alert(nombre)
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label for="nombre">Nombre : </label>
+        <input name="nombre" id="nombre" type="text">
+        <br>
+        <button type="button" onclick="funcion()">presioname</button>
+    </form>
+</body>
+</html>

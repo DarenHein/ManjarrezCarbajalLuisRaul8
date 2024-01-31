@@ -1,0 +1,45 @@
+<!--
+
+    vamos a pasar de una ventana a otra con js 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventana 1 </title>
+    <style>
+        html{
+            background-color: black;
+            color : rgb(4, 250, 4);
+            text-align: center;
+        }
+        h1{
+            font-size: 80px;
+        }
+        button{
+            background-color: black;
+            color: rgb(5, 255, 5);
+            border-color: rgb(3, 246, 3);
+        }
+    </style>
+    
+    <script>
+        function funcion(){
+            // aquie vamos a cabiar de pantalla 
+            window.location.href="subpantalla.html"
+            // explicacion 
+            // window -> ahce referencia ala ventana 
+            // sub clase location -> referencia ala ubicacion 
+            // href -> el ulr al que cambiaremos 
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Pagina 1</h1>
+
+    <button onclick="funcion()">Pagina 2</button>
+    
+</body>
+</html>
