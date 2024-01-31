@@ -1,0 +1,46 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // vamos a validar si es un numero o un caracter 
+
+        let numero = 12 
+        let letra = "letra"
+        let verificar = isNaN(numero) // devolvera false por que es un numero 
+        let verificar2 = isNaN(letra) // devolvera true por que es un String 
+
+        console.log(verificar)
+        console.log(verificar2)
+
+        // ahora hacermos una pqueña validacion con un formulario en html 
+
+        function funcion(){
+            var numero = document.getElementById("numero").value
+            let verificar = isNaN(numero)
+            if (verificar == true){
+                alert("Es una cadena")
+            }else {
+                alert("Es un numero")
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <h1> Validacion con isNAN </h1>
+    <form action="/" method="post">
+        
+        <label for="numero"> Ingresa algp : </label>
+        <input type="text" name = "numero" id="numero">
+
+        <button onclick="funcion()">Presioname</button>
+    </form>
+    
+</body>
+</html>

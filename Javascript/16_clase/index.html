@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // vamos a ocupar isnan con un campo y mas aparte que este liminado a de no muperos negativos 
+
+        function verificar(){
+            let numero = document.getElementById("campo").value
+            let verificar = isNaN(numero)
+            if (verificar == true){
+                alert("Favor de ingresar solo numeros")
+            }else {
+                let numero2 = parseInt(numero)
+                if(numero2 <= 0){
+                    alert("numero menor a cero ")
+                }else {
+                    alert("bien ingresasnte un numero")
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Formulario con validacion del usuario</h1>
+
+    <form action="/" method="post">
+        <label for="numero">Ingresa lo que sea : </label>
+        <input type="text" name="campo" id="campo">
+        <br>
+        <button onclick="verificar()">Presioname</button>
+    </form>
+    
+</body>
+</html>
