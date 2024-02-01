@@ -6,31 +6,31 @@ Claro, aquí tienes un temario básico para aprender JavaScript desde cero. Pued
    - Usos comunes y aplicaciones.
 
 1.2 **Configuración del entorno de desarrollo**
-   - Instalación de un navegador web.
-   - Uso de la consola del navegador.
+   - Instalación de un navegador web. ## terminado y ocupo node 
+   - Uso de la consola del navegador. ## mas o menos me gusta mas la terminal 
 
-1.3 **Primeros pasos con JavaScript**
-   - Sintaxis básica.
-   - Variables y tipos de datos.
-   - Operadores.
+1.3 **Primeros pasos con JavaScript** 
+   - Sintaxis básica. # terminado 
+   - Variables y tipos de datos. # terminado 
+   - Operadores. # terminado 
 
 ### Módulo 2: Estructuras de control
 2.1 **Condicionales**
-   - If, else if, else.
-   - Switch.
+   - If, else if, else. ## terminado 
+   - Switch. # terminado 
 
 2.2 **Bucles**
-   - For, while, do-while.
-   - Control de bucles (break, continue).
+   - For, while, do-while. ##terminado 
+   - Control de bucles (break, continue). #terminado 
 
 ### Módulo 3: Funciones
 3.1 **Definición y llamada de funciones**
    - Parámetros y argumentos.
-   - Retorno de valores.
+   - Retorno de valores.  ## tyerminado 
 
 3.2 **Ámbito de las variables**
    - Variables locales y globales.
-   - Cierre (closures).
+   - Cierre (closures). ## terminado este bloque 
 
 ### Módulo 4: Objetos y Arrays
 4.1 **Objetos**
