@@ -20,6 +20,8 @@
             background-color: #2F2E2E;
             color: #BC5555;
             border-color: #BC5555;
+            font-size: 20px;
+
         }
 
         .div {
@@ -34,29 +36,36 @@
         .div_boton {
             position: absolute;
             top: 250px;
-            left: 150px;
+            left: 250px;
         }
     </style>
     <script>
         function calcular() {
             const porcentaje = 2; // porcentaje de la persona 
             var capital = document.getElementById("dinero").value // tomamos el campo de la persona 
-            var verificar = isNaN(capital)
-            if (verificar == true) {
-                // es cadena 
-                alert("ingresa solamente numeros ")
-            } else {
-                // es numero 
-                var capital2 = parseInt(capital); // transfroamamos el dinerp a int 
-                if (capital2 <= 0) {
-                    alert("Porfacor ingresa un numero mayor a 0 ")
-                } else {
-                    var formula = (capital2 * porcentaje) / 100; // hacemos la formula de la lana 
-                    capital2 += formula // le sumamos al dinero incial lo que le crecio  
-                    var final = capital2.toString() // volvemos a transformar a string 
-                    alert("Su capital sumando el %2 del mes queda en $" + final) // imprimimos un alert con el resultado final 
-                }
+            if (capital == "") {
+                alert("campo vacio") // por si el usuario ingresa un campo vacio 
             }
+            else {
+                var verificar = isNaN(capital)
+                if (verificar == true) {
+                    // es cadena 
+                    alert("ingresa solamente numeros ")
+                } else {
+                    // es numero 
+                    var capital2 = parseInt(capital); // transfroamamos el dinerp a int 
+                    if (capital2 <= 0) {
+                        alert("Porfacor ingresa un numero mayor a 0 ")
+                    } else {
+                        var formula = (capital2 * porcentaje) / 100; // hacemos la formula de la lana 
+                        capital2 += formula // le sumamos al dinero incial lo que le crecio  
+                        var final = capital2.toString() // volvemos a transformar a string 
+                        alert("Su capital sumando el %2 del mes queda en $" + final) // imprimimos un alert con el resultado final 
+                    }
+                }
+
+            }
+
 
         }
     </script>

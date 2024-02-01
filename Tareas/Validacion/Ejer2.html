@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
-        html{
+        html {
             background-color: #558ebc;
             color: white;
         }
-        .boton{
+
+        .boton {
             background-color: #2F2E2E;
             border-color: #558ebc;
-            color : #558ebc; 
+            color: #558ebc;
         }
-        h1{
+
+        h1 {
             font-size: 40px;
             text-align: center;
         }
-        .parrafo{
+
+        .parrafo {
             text-align: center;
             font-size: 20px;
         }
-        .mi_div{
+
+        .mi_div {
             position: absolute;
             top: 30px;
             left: 400px;
@@ -32,26 +36,55 @@
             height: 1000px;
 
         }
-        .mi_div2{
+
+        .mi_div2 {
             position: absolute;
             top: 250px;
             left: 30px;
         }
 
-        .mi_div_boton{
+        .mi_div_boton {
             position: absolute;
             top: 220px;
             left: 180px;
 
         }
     </style>
+    <script>
+        function validacion() {
+            // primero tomamos los datos de los fomrlarios 
+            var nombre = document.getElementById("nombre").value
+            var sueldo = document.getElementById("Sueldo").value
+            // verificaciones 
+            var veri = isNaN(nombre)
+            var veri2 = isNaN(sueldo)
+            if (nombre == "" && sueldo == "") {
+                alert("campos vacios")
+            } else {
+                if (veri == true && veri2 == false) {
+                    // es tan correctos los datos 
+
+                } else {
+
+                    // solo ingresa cadenas 
+                    alert("revisa los campos")
+                }
+
+            }
+            // transformamos el suelfo en int 
+
+
+
+        }
+    </script>
 </head>
+
 <body>
 
     <div class="mi_div">
         <h1>Ejercicio 2</h1>
         <br>
-        <p class="parrafo">Calcular la comision de ventas de un trabajador <br>se le aumenta un %10 por cada una  </p>
+        <p class="parrafo">Calcular la comision de ventas de un trabajador <br>se le aumenta un %10 por cada una </p>
         <div class="mi_div2">
             <form>
                 <br>
@@ -59,15 +92,16 @@
                 <input type="text" name="nombre" id="nombre">
                 <br>
                 <br>
-                <label for="Suekdo">Ingresa tu sueldo base : </label>
+                <label for="Sueldo">Ingresa tu sueldo base : </label>
                 <input type="text" name="Sueldo" id="Sueldo">
                 <!--falta meter el campo de cuantas comisiones -->
                 <div class="mi_div_boton">
-                    <button class="boton" onclick="">Calcular</button>
+                    <button class="boton" onclick="validacion()">Calcular</button>
                 </div>
             </form>
         </div>
     </div>
-    
+
 </body>
+
 </html>
