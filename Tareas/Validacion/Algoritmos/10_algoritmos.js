@@ -45,7 +45,7 @@ function tarea2() {
             if (ventasEntero !== parseFloat(ventas)) {
                 alert("Por favor, ingresa solo números enteros.");
             } else {
-                if (ventasEntero <= 0) {
+                if (ventasEntero <= 0 || ventasEntero >= 10) {
                     alert("Error");
                 } else {
                     // ahora sacaremos el porcentaje de una venta 
@@ -59,4 +59,29 @@ function tarea2() {
             }
         }
     }
+}
+
+
+function tarea3(){
+     let producto1 = 100.0
+     let producto2 = 200.0 
+     const descuento = 15 
+
+     var elemento = document.getElementById("producto1").value
+     var elemento2 = document.getElementById("producto2").value
+
+     var elementoFloat = parseFloat(elemento)
+     var elementoFloat2 = parseFloat(elemento2)
+
+     console.log(elementoFloat)
+     console.log(elementoFloat2)
+
+     // sumamos las cantidades 
+     let compra = producto1 * elementoFloat 
+     let compra2 = producto2 * elementoFloat2 
+     let suma = compra + compra2
+     console.log(suma)
+     let descuentoAplicado = (descuento / 100) * suma;
+     suma = suma - compra_descuento
+     console.log(suma)
 }
