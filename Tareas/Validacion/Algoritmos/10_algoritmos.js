@@ -89,3 +89,45 @@ function tarea3() {
         alert("comrpa con descuento %15 queda en $" + suma2)
     }
 }
+
+function tarea5() {
+    // calcular porcentajes de hombre y mujeres 
+    var hombres = document.getElementById("hombres").value
+    var mujeres = document.getElementById("mujeres").value
+
+    if (hombres == "" && mujeres == "") {
+        alert("ambos campos vacios")
+    } else if (hombres == "" && mujeres != "") {
+        alert("rellena el campo de hombres")
+    } else if (hombres != "" && mujeres == "") {
+        alert("rellena el campo de mujeres")
+    } else {
+        // verificamos que los datos sean numeros 
+        var ver1 = isNaN(hombres)
+        var ver2 = isNaN(mujeres)
+        if (ver1 == true && ver2 == true) {
+            alert("ambos campos no son numeros")
+        } else if (ver1 == true && ver2 == false) {
+            alert("el campo de hombres no es un numero")
+        } else if (ver1 == false && ver2 == true) {
+            alert("el campo de mujeres no es un numero ")
+        } else {
+
+            var ver1 = !Number.isInteger(parseFloat(hombres));
+            var ver2 = !Number.isInteger(parseFloat(mujeres));
+
+            if (ver1 && ver2) {
+                alert("Ambos campos no son números enteros");
+            } else if (ver1 && !ver2) {
+                alert("El campo de hombres no es un número entero");
+            } else if (!ver1 && ver2) {
+                alert("El campo de mujeres no es un número entero");
+            } else {
+                var numeroH = parseInt(hombres);
+                var numeroM = parseInt(mujeres);
+            }
+                
+            }
+        }
+
+    }
