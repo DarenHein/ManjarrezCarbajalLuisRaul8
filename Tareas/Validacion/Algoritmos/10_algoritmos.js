@@ -125,6 +125,15 @@ function tarea5() {
             } else {
                 var numeroH = parseInt(hombres);
                 var numeroM = parseInt(mujeres);
+                if (numeroH <= 0 && numeroM <= 0){
+                    alert("ambos numeros son cero")
+                }else if(numeroH != 0 && numeroM <= 0){
+                    alert("el campo mujeres es cero o menor")
+                }else if (numeroH <= 0 && numeroM != 0){
+                    alert("el campo de hombres es menor o igual a cero ")
+                }else {
+                    // no mames porfin 
+                }
             }
                 
             }
