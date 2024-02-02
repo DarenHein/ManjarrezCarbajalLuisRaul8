@@ -62,26 +62,30 @@ function tarea2() {
 }
 
 
-function tarea3(){
-     let producto1 = 100.0
-     let producto2 = 200.0 
-     const descuento = 15 
+function tarea3() {
+    let producto1 = 100.0
+    let producto2 = 200.0
+    const descuento = 15
 
-     var elemento = document.getElementById("producto1").value
-     var elemento2 = document.getElementById("producto2").value
+    var elemento = document.getElementById("producto1").value
+    var elemento2 = document.getElementById("producto2").value
 
-     var elementoFloat = parseFloat(elemento)
-     var elementoFloat2 = parseFloat(elemento2)
+    var elementoFloat = parseFloat(elemento)
+    var elementoFloat2 = parseFloat(elemento2)
 
-     console.log(elementoFloat)
-     console.log(elementoFloat2)
+    console.log(elementoFloat)
+    console.log(elementoFloat2)
 
-     // sumamos las cantidades 
-     let compra = producto1 * elementoFloat 
-     let compra2 = producto2 * elementoFloat2 
-     let suma = compra + compra2
-     console.log(suma)
-     let descuentoAplicado = (descuento / 100) * suma;
-     suma = suma - compra_descuento
-     console.log(suma)
+    // sumamos las cantidades 
+    let compra = producto1 * elementoFloat
+    let compra2 = producto2 * elementoFloat2
+    let suma = compra + compra2
+    if (suma == 0) {
+        alert("no hay ninguna cantidad de prenda esojida")
+    } else {
+        let compra_descuento = (descuento / 100) * suma;
+        suma = suma - compra_descuento
+        suma2 = String(suma)
+        alert("comrpa con descuento %15 queda en $" + suma2)
+    }
 }
