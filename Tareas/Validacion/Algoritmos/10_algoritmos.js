@@ -90,6 +90,10 @@ function tarea3() {
     }
 }
 
+function limitarDecimales(numero, cantidadDecimales) {
+    return parseFloat(numero.toFixed(cantidadDecimales));
+}
+
 function tarea5() {
     // calcular porcentajes de hombre y mujeres 
     var hombres = document.getElementById("hombres").value
@@ -133,6 +137,17 @@ function tarea5() {
                     alert("el campo de hombres es menor o igual a cero ")
                 }else {
                     // no mames porfin 
+                    let total = numeroH + numeroM
+                    // ahora sacaremos el porcentaje de cada uno 
+                    let porcentajeH = (numeroH/total) * 100
+                    let porcentajeM = (numeroM/total) * 100 
+                    porcentajeH = limitarDecimales(porcentajeH)
+                    porcentajeM = limitarDecimales(porcentajeM)
+                    let cadenaT = String(total) // total 
+                    let cadenaH = String(porcentajeH) // hombres 
+                    let cadenaM = String(porcentajeM) // mujeres 
+                    alert("Total : " + cadenaT + " mujeres : " + cadenaM + " hombres : " + cadenaH)  
+
                 }
             }
                 
@@ -140,3 +155,35 @@ function tarea5() {
         }
 
     }
+
+function tarea6(){
+    var parcial1 = document.getElementById("parcial1").value
+    var parcial2 = document.getElementById("parcial2").value
+    var parcial3 = document.getElementById("parcial3").value
+    var examen = document.getElementById("examen").value
+    var trabajo = document.getElementById("trabajo").value
+
+    var arreglo = [parcial1,parcial2,parcial3,examen,trabajo]
+
+    var longitud = arreglo.length
+
+    let acum = 0 
+
+    for (let i = 0 ; i <= longitud ; i++){
+
+        var veri = isNaN(arreglo[i])
+        
+        if (veri == true){
+            // es una cadena 
+        }else {
+            acum += 1 
+        }
+    }
+
+    if (acum == longitud){
+        // es que todos los campos son numeros 
+    }else {
+        // es que alguno de lso campos no son numeros 
+        alert("alguno de lso campos no es un numero ")
+    }
+}
