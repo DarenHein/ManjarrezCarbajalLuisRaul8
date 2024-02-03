@@ -156,12 +156,37 @@ function tarea5() {
 
     }
 
-function tarea6(){
+function tarea4(){
+
     var parcial1 = document.getElementById("parcial1").value
     var parcial2 = document.getElementById("parcial2").value
     var parcial3 = document.getElementById("parcial3").value
     var examen = document.getElementById("examen").value
     var trabajo = document.getElementById("trabajo").value
+
+    let acum = 0 
+
+    let arreglo = [parcial1,parcial2,parcial3,examen,trabajo]
+
+    let longitud = arreglo.length
+
+    for(let i = 0 ; i < longitud; i++ ){
+        if(arreglo[i] == ""){
+            
+        }else {
+            acum += 1
+        }
+    }
+    if (acum == longitud){
+        // todo esta bien 
+        tarea4_1(parcial1,parcial2,parcial3,examen,trabajo)
+        
+    }else {
+        alert("algun campo esta vacio")
+    }
+
+}
+function tarea4_1(parcial1,parcial2,parcial3,examen,trabajo){ // verificacion de numeros 
 
     var arreglo = [parcial1,parcial2,parcial3,examen,trabajo]
 
@@ -169,7 +194,7 @@ function tarea6(){
 
     let acum = 0 
 
-    for (let i = 0 ; i <= longitud ; i++){
+    for (let i = 0 ; i < longitud ; i++){
 
         var veri = isNaN(arreglo[i])
         
@@ -182,8 +207,18 @@ function tarea6(){
 
     if (acum == longitud){
         // es que todos los campos son numeros 
+        alert("todos los campos son numero ")
     }else {
         // es que alguno de lso campos no son numeros 
         alert("alguno de lso campos no es un numero ")
     }
+}
+
+function tarea4_2(parcial1,parcial2,parcial3,examen,trabajo){ // trsnaformar todos a numeros y que no sean menores a cero 
+    var arreglo = [parcial1,parcial2,parcial3,examen,trabajo]
+    let longitud = arreglo.length
+    for (let i = o ; 
+        )
+
+
 }
