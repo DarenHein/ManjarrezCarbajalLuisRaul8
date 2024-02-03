@@ -146,7 +146,7 @@ function tarea5() {
                     let cadenaT = String(total) // total 
                     let cadenaH = String(porcentajeH) // hombres 
                     let cadenaM = String(porcentajeM) // mujeres 
-                    alert("Total : " + cadenaT + " mujeres : " + cadenaM + " hombres : " + cadenaH)  
+                    alert("Total : " + cadenaT + " # mujeres : %" + cadenaM + " # hombres : %" + cadenaH)  
 
                 }
             }
