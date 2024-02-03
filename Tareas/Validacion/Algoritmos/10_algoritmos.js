@@ -207,7 +207,7 @@ function tarea4_1(parcial1,parcial2,parcial3,examen,trabajo){ // verificacion de
 
     if (acum == longitud){
         // es que todos los campos son numeros 
-        alert("todos los campos son numero ")
+        tarea4_2(parcial1,parcial2,parcial3,examen,trabajo)
     }else {
         // es que alguno de lso campos no son numeros 
         alert("alguno de lso campos no es un numero ")
@@ -217,8 +217,31 @@ function tarea4_1(parcial1,parcial2,parcial3,examen,trabajo){ // verificacion de
 function tarea4_2(parcial1,parcial2,parcial3,examen,trabajo){ // trsnaformar todos a numeros y que no sean menores a cero 
     var arreglo = [parcial1,parcial2,parcial3,examen,trabajo]
     let longitud = arreglo.length
-    for (let i = o ; 
-        )
+    let acum = 0 
+    for ( let i = 0 ; i < longitud ; i++){
+        arreglo[i] = parseFloat(arreglo[i])
+    }
+    // hasta este punto ya todos son float 
+    for (let i = 0 ; i < longitud ; i++){
+        if(arreglo[i] < 0 || arreglo[i] > 10){
+
+        }else {
+            acum+=1
+        }
+    }
+    if ( acum == longitud){
+        
+        // todos los numeros son mayores o igual a 0 
+        alert("muy bien muchacho ")
+    }else {
+        alert("algun campo contiene un numero mayor a 10 o menor a 0  ")
+    }
+}
+
+function tarea4_3(parcial1,parcial2,parcial3,examen,trabajo){
+    // todo aqui ahora solo aremos la operaciones 
+
+    
 
 
 }
