@@ -232,7 +232,7 @@ function tarea4_2(parcial1,parcial2,parcial3,examen,trabajo){ // trsnaformar tod
     if ( acum == longitud){
         
         // todos los numeros son mayores o igual a 0 
-        alert("muy bien muchacho ")
+        tarea4_3(parcial1,parcial2,parcial3,examen,trabajo)
     }else {
         alert("algun campo contiene un numero mayor a 10 o menor a 0  ")
     }
@@ -240,8 +240,29 @@ function tarea4_2(parcial1,parcial2,parcial3,examen,trabajo){ // trsnaformar tod
 
 function tarea4_3(parcial1,parcial2,parcial3,examen,trabajo){
     // todo aqui ahora solo aremos la operaciones 
+    /**
+     * porcentajes del ejercicio 
+     * 55 de los 3 parcioales 
+     * 30 de examen 
+     * 15 trabajo 
+     */
+    const porcentajeParciales = 0.55;
+    const porcentajeExamen = 0.30;
+    const porcentajeTrabajo = 0.15;
 
+    const calificacionFinal = (parcial1 + parcial2 + parcial3) * porcentajeParciales +
+                             examen * porcentajeExamen +
+                             trabajo * porcentajeTrabajo;
+    var cali = String(calificacionFinal)
+    alert("la calificacion final es : " + cali)
     
-
+}
+function tarea6(){
+    // año en que nos basaremos es el 2024
+    var año = document.getElementById("edad").value
+    var año = parseInt(año)
+    var formula = 2024 - año
+    var resultado = String(formula)
+    alert("tu edad es de : " + resultado)
 
 }
