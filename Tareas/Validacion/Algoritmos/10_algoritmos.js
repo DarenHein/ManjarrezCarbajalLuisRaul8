@@ -1,7 +1,4 @@
-
-
 // aqui mete los 10 algoritmos en funciones cada uno 
-
 function Ejericio1() {
     const porcentaje = 2; // porcentaje de la persona 
     var capital = document.getElementById("dinero").value // tomamos el campo de la persona 
@@ -28,12 +25,10 @@ function Ejericio1() {
 
     }
 }
-
 function tarea2() {
     var sueldo = 1000;
     var ventas = document.getElementById("dinero").value;
     var veri = isNaN(ventas);
-
     if (ventas === "") {
         alert("Campo vacío");
     } else {
@@ -41,7 +36,6 @@ function tarea2() {
             alert("Cadena");
         } else {
             var ventasEntero = parseInt(ventas);
-
             if (ventasEntero !== parseFloat(ventas)) {
                 alert("Por favor, ingresa solo números enteros.");
             } else {
@@ -66,16 +60,12 @@ function tarea3() {
     let producto1 = 100.0
     let producto2 = 200.0
     const descuento = 15
-
     var elemento = document.getElementById("producto1").value
     var elemento2 = document.getElementById("producto2").value
-
     var elementoFloat = parseFloat(elemento)
     var elementoFloat2 = parseFloat(elemento2)
-
     console.log(elementoFloat)
     console.log(elementoFloat2)
-
     // sumamos las cantidades 
     let compra = producto1 * elementoFloat
     let compra2 = producto2 * elementoFloat2
@@ -89,16 +79,13 @@ function tarea3() {
         alert("comrpa con descuento %15 queda en $" + suma2)
     }
 }
-
 function limitarDecimales(numero, cantidadDecimales) {
     return parseFloat(numero.toFixed(cantidadDecimales));
 }
-
 function tarea5() {
     // calcular porcentajes de hombre y mujeres 
     var hombres = document.getElementById("hombres").value
     var mujeres = document.getElementById("mujeres").value
-
     if (hombres == "" && mujeres == "") {
         alert("ambos campos vacios")
     } else if (hombres == "" && mujeres != "") {
@@ -116,10 +103,8 @@ function tarea5() {
         } else if (ver1 == false && ver2 == true) {
             alert("el campo de mujeres no es un numero ")
         } else {
-
             var ver1 = !Number.isInteger(parseFloat(hombres));
             var ver2 = !Number.isInteger(parseFloat(mujeres));
-
             if (ver1 && ver2) {
                 alert("Ambos campos no son números enteros");
             } else if (ver1 && !ver2) {
@@ -146,8 +131,7 @@ function tarea5() {
                     let cadenaT = String(total) // total 
                     let cadenaH = String(porcentajeH) // hombres 
                     let cadenaM = String(porcentajeM) // mujeres 
-                    alert("Total : " + cadenaT + " # mujeres : %" + cadenaM + " # hombres : %" + cadenaH)  
-
+                    alert("Total : " + cadenaT + " # mujeres : %" + cadenaM + " # hombres : %" + cadenaH) 
                 }
             }
                 
@@ -155,24 +139,17 @@ function tarea5() {
         }
 
     }
-
 function tarea4(){
-
     var parcial1 = document.getElementById("parcial1").value
     var parcial2 = document.getElementById("parcial2").value
     var parcial3 = document.getElementById("parcial3").value
     var examen = document.getElementById("examen").value
     var trabajo = document.getElementById("trabajo").value
-
     let acum = 0 
-
     let arreglo = [parcial1,parcial2,parcial3,examen,trabajo]
-
     let longitud = arreglo.length
-
     for(let i = 0 ; i < longitud; i++ ){
-        if(arreglo[i] == ""){
-            
+        if(arreglo[i] == ""){ 
         }else {
             acum += 1
         }
@@ -180,31 +157,22 @@ function tarea4(){
     if (acum == longitud){
         // todo esta bien 
         tarea4_1(parcial1,parcial2,parcial3,examen,trabajo)
-        
     }else {
         alert("algun campo esta vacio")
     }
-
 }
 function tarea4_1(parcial1,parcial2,parcial3,examen,trabajo){ // verificacion de numeros 
-
     var arreglo = [parcial1,parcial2,parcial3,examen,trabajo]
-
     var longitud = arreglo.length
-
     let acum = 0 
-
     for (let i = 0 ; i < longitud ; i++){
-
         var veri = isNaN(arreglo[i])
-        
         if (veri == true){
             // es una cadena 
         }else {
             acum += 1 
         }
     }
-
     if (acum == longitud){
         // es que todos los campos son numeros 
         tarea4_2(parcial1,parcial2,parcial3,examen,trabajo)
@@ -213,7 +181,6 @@ function tarea4_1(parcial1,parcial2,parcial3,examen,trabajo){ // verificacion de
         alert("alguno de lso campos no es un numero ")
     }
 }
-
 function tarea4_2(parcial1,parcial2,parcial3,examen,trabajo){ // trsnaformar todos a numeros y que no sean menores a cero 
     var arreglo = [parcial1,parcial2,parcial3,examen,trabajo]
     let longitud = arreglo.length
@@ -224,20 +191,17 @@ function tarea4_2(parcial1,parcial2,parcial3,examen,trabajo){ // trsnaformar tod
     // hasta este punto ya todos son float 
     for (let i = 0 ; i < longitud ; i++){
         if(arreglo[i] < 0 || arreglo[i] > 10){
-
         }else {
             acum+=1
         }
     }
     if ( acum == longitud){
-        
         // todos los numeros son mayores o igual a 0 
         tarea4_3(parcial1,parcial2,parcial3,examen,trabajo)
     }else {
         alert("algun campo contiene un numero mayor a 10 o menor a 0  ")
     }
 }
-
 function tarea4_3(parcial1,parcial2,parcial3,examen,trabajo){
     // todo aqui ahora solo aremos la operaciones 
     /**
@@ -249,13 +213,11 @@ function tarea4_3(parcial1,parcial2,parcial3,examen,trabajo){
     const porcentajeParciales = 0.55;
     const porcentajeExamen = 0.30;
     const porcentajeTrabajo = 0.15;
-
     const calificacionFinal = (parcial1 + parcial2 + parcial3) * porcentajeParciales +
                              examen * porcentajeExamen +
                              trabajo * porcentajeTrabajo;
     var cali = String(calificacionFinal)
     alert("la calificacion final es : " + cali)
-    
 }
 function tarea6(){
     // año en que nos basaremos es el 2024
@@ -264,9 +226,7 @@ function tarea6(){
     var formula = 2024 - año
     var resultado = String(formula)
     alert("tu edad es de : " + resultado)
-
 }
-
 function validacion_vacios(){
     let longitud = arguments.length
     let acum = 0 
@@ -274,37 +234,29 @@ function validacion_vacios(){
     let bandera = false 
     for (let i = 0 ; i < longitud ; i++){
         if (arguments[i] == ""){
-            
         }else {
             acum += 1 
         }
     }
     if (acum == longitud){
-
         // segunda validadcion que sean numeros 
         for (let i = 0 ; i < longitud ; i ++ ){
             var ver = isNaN(arguments[i])
             if (ver == true){
-
             }else{
                 acum2 += 1 
             }
         }
         if (acum2 == longitud){
-
             bandera = true 
             return bandera
-
-            
         }else{
             alert("algun campo hay un caracter invalido ")
         }
-
     }else {
         alert("algun campo est vacio")
     }
 }
-
 function tarea7(){
     // tareaa numero 7
     var numero = document.getElementById("numero").value
@@ -314,7 +266,6 @@ function tarea7(){
         // aqui ya empieza la logica 
         var numeroI = parseFloat(numero)
         var numeroI2 = parseFloat(numero2)
-
         if (numeroI == numeroI2){
             var resultado = numeroI * numeroI2
             var cadena = String(resultado)
@@ -328,18 +279,13 @@ function tarea7(){
             var cadena = String(resultado)
             alert("la respuesta es de : "+cadena)
         }
-
     }
 }
-
 function tarea8(){
-
     var numero = document.getElementById("numero").value
     var numero2 = document.getElementById("numero2").value
     var numero3 = document.getElementById("numero3").value
-
     var bandera = validacion_vacios(numero,numero2,numero3)
-
     if (bandera == true){
         //aqui vamos a hacer la opcaciones 
         tarea8_1(numero,numero2,numero3)
@@ -349,16 +295,12 @@ function tarea8_1(num1, num2, num3) {
     num1 = parseInt(num1);
     num2 = parseInt(num2);
     num3 = parseInt(num3);
-
     let maxNumero = num1;
-
     if (num2 > maxNumero) {
         maxNumero = num2;
     }
-
     if (num3 > maxNumero) {
         maxNumero = num3;
     }
-
     alert("El número más grande es " + maxNumero);
 }
