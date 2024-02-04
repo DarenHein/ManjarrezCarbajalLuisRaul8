@@ -114,95 +114,95 @@ function tarea5() {
             } else {
                 var numeroH = parseInt(hombres);
                 var numeroM = parseInt(mujeres);
-                if (numeroH <= 0 && numeroM <= 0){
+                if (numeroH <= 0 && numeroM <= 0) {
                     alert("ambos numeros son cero")
-                }else if(numeroH != 0 && numeroM <= 0){
+                } else if (numeroH != 0 && numeroM <= 0) {
                     alert("el campo mujeres es cero o menor")
-                }else if (numeroH <= 0 && numeroM != 0){
+                } else if (numeroH <= 0 && numeroM != 0) {
                     alert("el campo de hombres es menor o igual a cero ")
-                }else {
+                } else {
                     // no mames porfin 
                     let total = numeroH + numeroM
                     // ahora sacaremos el porcentaje de cada uno 
-                    let porcentajeH = (numeroH/total) * 100
-                    let porcentajeM = (numeroM/total) * 100 
+                    let porcentajeH = (numeroH / total) * 100
+                    let porcentajeM = (numeroM / total) * 100
                     porcentajeH = limitarDecimales(porcentajeH)
                     porcentajeM = limitarDecimales(porcentajeM)
                     let cadenaT = String(total) // total 
                     let cadenaH = String(porcentajeH) // hombres 
                     let cadenaM = String(porcentajeM) // mujeres 
-                    alert("Total : " + cadenaT + " # mujeres : %" + cadenaM + " # hombres : %" + cadenaH) 
+                    alert("Total : " + cadenaT + " # mujeres : %" + cadenaM + " # hombres : %" + cadenaH)
                 }
             }
-                
-            }
-        }
 
+        }
     }
-function tarea4(){
+
+}
+function tarea4() {
     var parcial1 = document.getElementById("parcial1").value
     var parcial2 = document.getElementById("parcial2").value
     var parcial3 = document.getElementById("parcial3").value
     var examen = document.getElementById("examen").value
     var trabajo = document.getElementById("trabajo").value
-    let acum = 0 
-    let arreglo = [parcial1,parcial2,parcial3,examen,trabajo]
+    let acum = 0
+    let arreglo = [parcial1, parcial2, parcial3, examen, trabajo]
     let longitud = arreglo.length
-    for(let i = 0 ; i < longitud; i++ ){
-        if(arreglo[i] == ""){ 
-        }else {
+    for (let i = 0; i < longitud; i++) {
+        if (arreglo[i] == "") {
+        } else {
             acum += 1
         }
     }
-    if (acum == longitud){
+    if (acum == longitud) {
         // todo esta bien 
-        tarea4_1(parcial1,parcial2,parcial3,examen,trabajo)
-    }else {
+        tarea4_1(parcial1, parcial2, parcial3, examen, trabajo)
+    } else {
         alert("algun campo esta vacio")
     }
 }
-function tarea4_1(parcial1,parcial2,parcial3,examen,trabajo){ // verificacion de numeros 
-    var arreglo = [parcial1,parcial2,parcial3,examen,trabajo]
+function tarea4_1(parcial1, parcial2, parcial3, examen, trabajo) { // verificacion de numeros 
+    var arreglo = [parcial1, parcial2, parcial3, examen, trabajo]
     var longitud = arreglo.length
-    let acum = 0 
-    for (let i = 0 ; i < longitud ; i++){
+    let acum = 0
+    for (let i = 0; i < longitud; i++) {
         var veri = isNaN(arreglo[i])
-        if (veri == true){
+        if (veri == true) {
             // es una cadena 
-        }else {
-            acum += 1 
+        } else {
+            acum += 1
         }
     }
-    if (acum == longitud){
+    if (acum == longitud) {
         // es que todos los campos son numeros 
-        tarea4_2(parcial1,parcial2,parcial3,examen,trabajo)
-    }else {
+        tarea4_2(parcial1, parcial2, parcial3, examen, trabajo)
+    } else {
         // es que alguno de lso campos no son numeros 
         alert("alguno de lso campos no es un numero ")
     }
 }
-function tarea4_2(parcial1,parcial2,parcial3,examen,trabajo){ // trsnaformar todos a numeros y que no sean menores a cero 
-    var arreglo = [parcial1,parcial2,parcial3,examen,trabajo]
+function tarea4_2(parcial1, parcial2, parcial3, examen, trabajo) { // trsnaformar todos a numeros y que no sean menores a cero 
+    var arreglo = [parcial1, parcial2, parcial3, examen, trabajo]
     let longitud = arreglo.length
-    let acum = 0 
-    for ( let i = 0 ; i < longitud ; i++){
+    let acum = 0
+    for (let i = 0; i < longitud; i++) {
         arreglo[i] = parseFloat(arreglo[i])
     }
     // hasta este punto ya todos son float 
-    for (let i = 0 ; i < longitud ; i++){
-        if(arreglo[i] < 0 || arreglo[i] > 10){
-        }else {
-            acum+=1
+    for (let i = 0; i < longitud; i++) {
+        if (arreglo[i] < 0 || arreglo[i] > 10) {
+        } else {
+            acum += 1
         }
     }
-    if ( acum == longitud){
+    if (acum == longitud) {
         // todos los numeros son mayores o igual a 0 
-        tarea4_3(parcial1,parcial2,parcial3,examen,trabajo)
-    }else {
+        tarea4_3(parcial1, parcial2, parcial3, examen, trabajo)
+    } else {
         alert("algun campo contiene un numero mayor a 10 o menor a 0  ")
     }
 }
-function tarea4_3(parcial1,parcial2,parcial3,examen,trabajo){
+function tarea4_3(parcial1, parcial2, parcial3, examen, trabajo) {
     // todo aqui ahora solo aremos la operaciones 
     /**
      * porcentajes del ejercicio 
@@ -214,12 +214,12 @@ function tarea4_3(parcial1,parcial2,parcial3,examen,trabajo){
     const porcentajeExamen = 0.30;
     const porcentajeTrabajo = 0.15;
     const calificacionFinal = (parcial1 + parcial2 + parcial3) * porcentajeParciales +
-                             examen * porcentajeExamen +
-                             trabajo * porcentajeTrabajo;
+        examen * porcentajeExamen +
+        trabajo * porcentajeTrabajo;
     var cali = String(calificacionFinal)
     alert("la calificacion final es : " + cali)
 }
-function tarea6(){
+function tarea6() {
     // año en que nos basaremos es el 2024
     var año = document.getElementById("edad").value
     var año = parseInt(año)
@@ -227,68 +227,68 @@ function tarea6(){
     var resultado = String(formula)
     alert("tu edad es de : " + resultado)
 }
-function validacion_vacios(){
+function validacion_vacios() {
     let longitud = arguments.length
-    let acum = 0 
+    let acum = 0
     let acum2 = 0
-    let bandera = false 
-    for (let i = 0 ; i < longitud ; i++){
-        if (arguments[i] == ""){
-        }else {
-            acum += 1 
+    let bandera = false
+    for (let i = 0; i < longitud; i++) {
+        if (arguments[i] == "") {
+        } else {
+            acum += 1
         }
     }
-    if (acum == longitud){
+    if (acum == longitud) {
         // segunda validadcion que sean numeros 
-        for (let i = 0 ; i < longitud ; i ++ ){
+        for (let i = 0; i < longitud; i++) {
             var ver = isNaN(arguments[i])
-            if (ver == true){
-            }else{
-                acum2 += 1 
+            if (ver == true) {
+            } else {
+                acum2 += 1
             }
         }
-        if (acum2 == longitud){
-            bandera = true 
+        if (acum2 == longitud) {
+            bandera = true
             return bandera
-        }else{
+        } else {
             alert("algun campo hay un caracter invalido ")
         }
-    }else {
+    } else {
         alert("algun campo est vacio")
     }
 }
-function tarea7(){
+function tarea7() {
     // tareaa numero 7
     var numero = document.getElementById("numero").value
     var numero2 = document.getElementById("numero2").value
-    var respuesta = validacion_vacios(numero , numero2)
-    if (respuesta == true){
+    var respuesta = validacion_vacios(numero, numero2)
+    if (respuesta == true) {
         // aqui ya empieza la logica 
         var numeroI = parseFloat(numero)
         var numeroI2 = parseFloat(numero2)
-        if (numeroI == numeroI2){
+        if (numeroI == numeroI2) {
             var resultado = numeroI * numeroI2
             var cadena = String(resultado)
-            alert("el resultado es de : "+cadena)
-        }else if(numeroI > numeroI2){
+            alert("el resultado es de : " + cadena)
+        } else if (numeroI > numeroI2) {
             var resultado = numeroI - numeroI2
             var cadena = String(resultado)
-            alert("la respuesta es de : "+cadena)
-        }else{
+            alert("la respuesta es de : " + cadena)
+        } else {
             var resultado = numeroI + numeroI2
             var cadena = String(resultado)
-            alert("la respuesta es de : "+cadena)
+            alert("la respuesta es de : " + cadena)
         }
     }
 }
-function tarea8(){
+function tarea8() {
     var numero = document.getElementById("numero").value
     var numero2 = document.getElementById("numero2").value
     var numero3 = document.getElementById("numero3").value
-    var bandera = validacion_vacios(numero,numero2,numero3)
-    if (bandera == true){
+    var bandera = validacion_vacios(numero, numero2, numero3)
+    if (bandera == true) {
         //aqui vamos a hacer la opcaciones 
-        tarea8_1(numero,numero2,numero3)
+        tarea8_1(numero, numero2, numero3)
     }
 }
 function tarea8_1(num1, num2, num3) {
@@ -308,11 +308,11 @@ function tarea8_1(num1, num2, num3) {
 function tarea9() {
     var horasNormales = parseFloat(document.getElementById("horasNormales").value);
     var salarioHoraNormal = parseFloat(document.getElementById("salarioHoraNormal").value);
-    var bandera = validacion_vacios(horasNormales,salarioHoraNormal)
-    if (bandera == true){
-        if (horasNormales < 0 && salarioHoraNormal < 0 ){
+    var bandera = validacion_vacios(horasNormales, salarioHoraNormal)
+    if (bandera == true) {
+        if (horasNormales < 0 && salarioHoraNormal < 0) {
             alert("algun campo es menor a cero revisalo")
-        }else{
+        } else {
             if (horasNormales > 40) {
                 var horasExtras = horasNormales - 40;
                 var salarioHorasExtras = 0;
@@ -328,7 +328,40 @@ function tarea9() {
                 alert("Salario total: $" + salarioTotalNormal.toFixed(2));
             }
         }
-    }else{
-        alert ("Error")
+    } else {
+        alert("Error")
     }
+}
+
+function tarea10() {
+    var antiguedad = parseInt(document.getElementById("antiguedad").value);
+    var salarioMensual = parseFloat(document.getElementById("salarioMensual").value);
+
+    var bandera = validacion_vacios(antiguedad, salarioMensual)
+    if (bandera == true) {
+        if (antiguedad < 0 || salarioMensual < 0) {
+            alert("campos mal ")
+        } else if (antiguedad < 0 && salarioMensual < 0) {
+            alert("campos mal ")
+        } else {
+
+            var utilidad = 0;
+
+            if (antiguedad < 1) {
+                utilidad = salarioMensual * 0.05;
+            } else if (antiguedad >= 1 && antiguedad < 2) {
+                utilidad = salarioMensual * 0.07;
+            } else if (antiguedad >= 2 && antiguedad < 5) {
+                utilidad = salarioMensual * 0.10;
+            } else if (antiguedad >= 5 && antiguedad < 10) {
+                utilidad = salarioMensual * 0.15;
+            } else {
+                utilidad = salarioMensual * 0.20;
+            }
+
+            alert("La utilidad anual es: $" + utilidad.toFixed(2));
+        }
+    }
+
+
 }
