@@ -341,7 +341,24 @@ function tarea8(){
     var bandera = validacion_vacios(numero,numero2,numero3)
 
     if (bandera == true){
-        alert("todo bien ")
+        //aqui vamos a hacer la opcaciones 
+        tarea8_1(numero,numero2,numero3)
+    }
+}
+function tarea8_1(num1, num2, num3) {
+    num1 = parseInt(num1);
+    num2 = parseInt(num2);
+    num3 = parseInt(num3);
+
+    let maxNumero = num1;
+
+    if (num2 > maxNumero) {
+        maxNumero = num2;
     }
 
+    if (num3 > maxNumero) {
+        maxNumero = num3;
+    }
+
+    alert("El número más grande es " + maxNumero);
 }
