@@ -304,3 +304,31 @@ function tarea8_1(num1, num2, num3) {
     }
     alert("El número más grande es " + maxNumero);
 }
+
+function tarea9() {
+    var horasNormales = parseFloat(document.getElementById("horasNormales").value);
+    var salarioHoraNormal = parseFloat(document.getElementById("salarioHoraNormal").value);
+    var bandera = validacion_vacios(horasNormales,salarioHoraNormal)
+    if (bandera == true){
+        if (horasNormales < 0 && salarioHoraNormal < 0 ){
+            alert("algun campo es menor a cero revisalo")
+        }else{
+            if (horasNormales > 40) {
+                var horasExtras = horasNormales - 40;
+                var salarioHorasExtras = 0;
+                if (horasExtras <= 8) {
+                    salarioHorasExtras = horasExtras * salarioHoraNormal * 2;
+                } else {
+                    salarioHorasExtras = (8 * salarioHoraNormal * 2) + ((horasExtras - 8) * salarioHoraNormal * 3);
+                }
+                var salarioTotal = (40 * salarioHoraNormal) + salarioHorasExtras;
+                alert("Salario total: $" + salarioTotal.toFixed(2));
+            } else {
+                var salarioTotalNormal = horasNormales * salarioHoraNormal;
+                alert("Salario total: $" + salarioTotalNormal.toFixed(2));
+            }
+        }
+    }else{
+        alert ("Error")
+    }
+}
