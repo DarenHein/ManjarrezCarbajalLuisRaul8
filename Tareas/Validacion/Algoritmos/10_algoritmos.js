@@ -266,3 +266,82 @@ function tarea6(){
     alert("tu edad es de : " + resultado)
 
 }
+
+function validacion_vacios(){
+    let longitud = arguments.length
+    let acum = 0 
+    let acum2 = 0
+    let bandera = false 
+    for (let i = 0 ; i < longitud ; i++){
+        if (arguments[i] == ""){
+            
+        }else {
+            acum += 1 
+        }
+    }
+    if (acum == longitud){
+
+        // segunda validadcion que sean numeros 
+        for (let i = 0 ; i < longitud ; i ++ ){
+            var ver = isNaN(arguments[i])
+            if (ver == true){
+
+            }else{
+                acum2 += 1 
+            }
+        }
+        if (acum2 == longitud){
+
+            bandera = true 
+            return bandera
+
+            
+        }else{
+            alert("algun campo hay un caracter invalido ")
+        }
+
+    }else {
+        alert("algun campo est vacio")
+    }
+}
+
+function tarea7(){
+    // tareaa numero 7
+    var numero = document.getElementById("numero").value
+    var numero2 = document.getElementById("numero2").value
+    var respuesta = validacion_vacios(numero , numero2)
+    if (respuesta == true){
+        // aqui ya empieza la logica 
+        var numeroI = parseFloat(numero)
+        var numeroI2 = parseFloat(numero2)
+
+        if (numeroI == numeroI2){
+            var resultado = numeroI * numeroI2
+            var cadena = String(resultado)
+            alert("el resultado es de : "+cadena)
+        }else if(numeroI > numeroI2){
+            var resultado = numeroI - numeroI2
+            var cadena = String(resultado)
+            alert("la respuesta es de : "+cadena)
+        }else{
+            var resultado = numeroI + numeroI2
+            var cadena = String(resultado)
+            alert("la respuesta es de : "+cadena)
+        }
+
+    }
+}
+
+function tarea8(){
+
+    var numero = document.getElementById("numero").value
+    var numero2 = document.getElementById("numero2").value
+    var numero3 = document.getElementById("numero3").value
+
+    var bandera = validacion_vacios(numero,numero2,numero3)
+
+    if (bandera == true){
+        alert("todo bien ")
+    }
+
+}
