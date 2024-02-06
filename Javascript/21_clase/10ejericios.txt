@@ -1,0 +1,20 @@
+1. Sumar elementos:
+Dado un array de números, escribe una función que calcule la suma de todos los elementos.
+2. Encontrar el máximo:
+Escribe una función que encuentre el elemento máximo en un array de números.
+3. Filtrar pares:
+Dado un array de números, filtra solo los números pares.
+4. Invertir un array:
+Escribe una función que invierta un array.
+5. Contar ocurrencias:
+Dado un array de elementos, cuenta cuántas veces aparece un elemento específico.
+6. Eliminar duplicados:
+Escribe una función que elimine los elementos duplicados de un array.
+7. Combinar arrays:
+Dados dos arrays, crea una nueva array que contenga los elementos de ambos.
+8. Encontrar elemento por índice:
+Escribe una función que encuentre el elemento en un array dada su posición.
+9. Ordenar array de cadenas:
+Dado un array de cadenas, ordénalo alfabéticamente
+10. Convertir a mayúsculas:
+Dado un array de cadenas, convierte todas las cadenas a mayúsculas.
