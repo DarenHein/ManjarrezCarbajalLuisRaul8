@@ -1,0 +1,1 @@
+aqui subire las actualizaciones de cada uno porfavor suban commits entendibles por que es nuestra evidencia 
