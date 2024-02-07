@@ -1,0 +1,112 @@
+### Examen Práctico y Teórico de JavaScript
+
+#### Módulo 1: Introducción a JavaScript
+
+1.1 **Preguntas Teóricas:**
+   - ¿Cuál es el propósito principal de JavaScript en el desarrollo web?
+        Respuesta : 
+            ser la logica la pagina web mietras que html es la estructura css es la apariencia js es la logica de como se comprata la web 
+   - Describe brevemente la historia y evolución de JavaScript.
+   - Menciona al menos tres usos comunes de JavaScript en aplicaciones web.
+        respuesta : 
+            *login para validar lso campos 
+            * en apis 
+            * en creacion de scripts 
+
+1.2 **Preguntas Prácticas:**
+   - Configura un entorno de desarrollo básico utilizando Node.js. Describe los pasos que seguirías.
+   - Escribe un código en JavaScript que imprima "Hola, mundo" en la consola del navegador.
+
+        Respuesta : 
+
+            * console.log("hola mundo "); 
+
+1.3 **Preguntas Prácticas:**
+   - Define una variable llamada `edad` y asígnale tu edad actual.
+        Respuesta : 
+            * descargr node 
+            * descargar un ide Vscode 
+            * crear una carpta y sub carpete 
+            * jalar las dos a vscode 
+            * listo empeiza a trabajar 
+   - Crea una función que tome dos parámetros y devuelva la suma de ambos.
+
+            function funcion(num , num2){
+                let respuesta = num + num2 
+                resturn respuesta
+            }
+            let respuesta = funcion(4,6)
+            console.log(respuesta)
+
+
+   - Utiliza un operador de comparación para verificar si `edad` es mayor o igual a 18.
+
+        respuesta 
+
+            let edad = 4 
+            let mayor_edad = 18 
+            if(edad >= mayor_edad){
+                console.log("mayor de edad")
+            }else if (edad <= 0 ){
+                console.log("Edad no permitida")
+            }else {
+                console.log("edad no valida intenta otra ves")
+            }
+
+#### Módulo 2: Estructuras de Control
+
+2.1 **Preguntas Teóricas:**
+   - Explica la diferencia entre `if`, `else if` y `else` en términos de condiciones.
+        respuesta 
+        * if -> si la condicion se cumple 
+        * else if -> talves si la condicion if no se cumple puede haber otra condicion 
+        * else -> en caso contratio que niguna condicion se cumpla entra aqui 
+   - ¿Cuándo es más apropiado utilizar la estructura `switch` en lugar de múltiples declaraciones `if`?
+        respuesta : 
+            + el case es para casos y el if con condiciones 
+
+2.2 **Preguntas Prácticas:**
+   - Implementa un bucle `for` que itere del 1 al 5 e imprima cada número en la consola.
+
+        respuesta : 
+
+            + for (let i = 0 ; i < 10 ; i++){
+                console.log(i)
+            }
+
+   - Utiliza un bucle `while` para imprimir los números pares del 2 al 10.
+            let i = 1
+            while (i<=10){
+
+                if (i % 2 == 0){
+                    console.log(i)
+                }else{
+                    continue
+                }
+
+            }
+   - Aplica `break` y `continue` en un bucle para imprimir solo los números impares del 1 al 10.
+
+#### Módulo 3: Funciones
+
+3.1 **Preguntas Prácticas:**
+   - Crea una función llamada `saludo` que tome un nombre como parámetro y devuelva un saludo personalizado.
+   - Define una función llamada `calcularCuadrado` que calcule el cuadrado de un número y lo devuelva.
+
+3.2 **Preguntas Teóricas:**
+   - Explica la diferencia entre variables locales y globales.
+   - ¿Qué son los closures y cómo se utilizan en JavaScript?
+
+#### Módulo 4: Objetos y Arrays
+
+4.1 **Preguntas Prácticas:**
+   - Crea un objeto llamado `coche` con propiedades como `marca`, `modelo` y `año`.
+   - Agrega un método al objeto `coche` que imprima información sobre el coche.
+
+4.2 **Preguntas Prácticas:**
+   - Crea un array llamado `frutas` con al menos tres elementos.
+   - Utiliza un bucle para imprimir cada elemento del array en la consola.
+
+---
+
+Espero que este examen te resulte útil para evaluar tus conocimientos en JavaScript. ¡Buena suerte!

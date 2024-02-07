@@ -1,3 +1,4 @@
+
 Claro, aquí tienes un temario básico para aprender JavaScript desde cero. Puedes seguir estos puntos como una guía de estudio:
 
 ### Módulo 1: Introducción a JavaScript
