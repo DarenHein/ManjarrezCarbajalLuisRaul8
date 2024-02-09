@@ -1,0 +1,71 @@
+
+Temario de estudio para DOM en JavaScript
+Introducción:
+
+¿Qué es el DOM?
+Estructura del DOM:
+Nodos
+Elementos
+Atributos
+Texto
+Acceso al DOM:
+document.getElementById()
+document.getElementsByTagName()
+document.querySelector()
+document.querySelectorAll()
+Manipulación del DOM:
+
+Modificación de texto:
+textContent
+innerHTML
+Modificación de atributos:
+getAttribute()
+setAttribute()
+removeAttribute()
+Modificación de estilos:
+style.property
+Añadir y eliminar elementos:
+appendChild()
+removeChild()
+insertBefore()
+Creación de elementos:
+document.createElement()
+Eventos:
+
+¿Qué son los eventos?
+Tipos de eventos:
+Eventos de ratón
+Eventos de teclado
+Eventos de formulario
+Añadir y eliminar eventos:
+addEventListener()
+removeEventListener()
+Manejo de eventos:
+Funciones de evento
+stopPropagation()
+preventDefault()
+Traversing:
+
+Recorrer el DOM:
+parentNode
+childNodes
+nextSibling
+previousSibling
+Filtros de nodos:
+nodeType
+nodeName
+classList
+Animaciones:
+
+Introducción a las animaciones:
+setInterval()
+clearInterval()
+requestAnimationFrame()
+cancelAnimationFrame()
+Animaciones básicas:
+Opacidad
+Posición
+Tamaño
+Librerías de animación:
+GSAP
+Anime.js
