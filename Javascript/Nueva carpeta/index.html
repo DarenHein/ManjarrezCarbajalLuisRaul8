@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+    <script> <!--todo  es el que le da la logica a la web -->
+        function instruccion(){ <!--instruccion es una funcion que realizara algo -->
+            var nombre = document.getElementById("nombre").value
+            alert("hola " +nombre)
+        }
+    </script>
+    <style>
+        html{
+            background-color: black;
+            color: white ;
+        }
+        button {
+            color: red;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>ola</<h1>
+    <label for="nombre">nombre</label>
+    <input type="text" id="nombre" name="nombre">
+    <button onclick="instruccion()">presioname</button>
+</body>
+</html>
