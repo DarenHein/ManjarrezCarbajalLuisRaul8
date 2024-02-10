@@ -1,0 +1,67 @@
+¡Por supuesto! Aquí tienes un temario gradual para aprender DOM en JavaScript, desde lo más básico hasta conceptos más avanzados:
+
+### Nivel Principiante:
+
+1. **Introducción al DOM:**
+    - ¿Qué es el DOM?
+    - Estructura de árbol del DOM.
+    - Accediendo a elementos con `getElementById`.
+
+2. **Manipulación Básica:**
+    - Cambiar el contenido de un elemento con `innerHTML`.
+    - Modificar atributos con `setAttribute`.
+    - Cambiar estilos con `style`.
+
+3. **Eventos:**
+    - Introducción a eventos.
+    - Manejar eventos con `addEventListener`.
+    - Eventos comunes: clic, cambio, envío de formulario, etc.
+
+4. **Selección de Múltiples Elementos:**
+    - `getElementsByClassName` y `getElementsByTagName`.
+    - Iterar sobre una colección de elementos.
+
+### Nivel Intermedio:
+
+5. **Selección Avanzada:**
+    - `querySelector` y `querySelectorAll`.
+    - Uso de selectores CSS.
+
+6. **Manipulación Avanzada:**
+    - Crear elementos con `createElement`.
+    - Agregar elementos con `appendChild` y `insertBefore`.
+    - Eliminar elementos con `removeChild`.
+
+7. **Traversing del DOM:**
+    - Navegar entre nodos padres, hijos y hermanos.
+
+### Nivel Avanzado:
+
+8. **Eventos Avanzados:**
+    - Delegación de eventos.
+    - Eventos de propagación.
+
+9. **Animaciones y Transiciones:**
+    - Usar `setTimeout` y `setInterval`.
+    - CSS transitions y animations.
+
+10. **AJAX y Fetch API:**
+    - Introducción a las solicitudes HTTP asíncronas.
+    - Utilizar `fetch` para realizar peticiones.
+
+11. **Frameworks y Bibliotecas:**
+    - Introducción a bibliotecas como jQuery.
+    - Conceptos básicos de frameworks como React o Vue.
+
+### Proyectos Prácticos:
+
+12. **Proyecto: Lista de Tareas:**
+    - Crear una lista de tareas con funciones CRUD.
+
+13. **Proyecto: Galería de Imágenes:**
+    - Crear una galería de imágenes con funciones de navegación.
+
+14. **Proyecto Final: Aplicación de Notas:**
+    - Desarrollar una aplicación de toma de notas con características avanzadas.
+
+Recuerda practicar mucho a medida que avanzas y construir proyectos para aplicar lo aprendido. ¡Buena suerte!

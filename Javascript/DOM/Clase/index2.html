@@ -7,10 +7,10 @@
     <script>
         function funcion(){
 
-            var nombre = document.querySelector("#nombre")
-            var apellido = document.querySelector(".apellido")
+            var nombre = document.querySelector("#nombre").value
+            var apellido = document.querySelector(".apellido").value
             var resultado =  nombre + " " + apellido
-            alert(resultado)
+            alert("nombre "+ nombre)
 
         }
     </script>
@@ -33,7 +33,7 @@
     <label for="apellido">Apellido : </label>
     <input type="text" name="apellido" class="apellido">
     <br>
-    <button onabort="funcion()">Presioname</button>
+    <button onclick="funcion()">Presioname</button>
     
 </body>
 </html>

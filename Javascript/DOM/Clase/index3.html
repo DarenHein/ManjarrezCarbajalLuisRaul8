@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function funcion(){
+            var elementos = document.getElementsByClassName("rojo")
+            for(let i = 0 ; i < elementos.length ; i++){
+                elementos[i].style.color = "red" //todo es en ingles me lleva la verga 
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>GetelementByClassName</h1>
+    <br>
+    <p>Imagina que tenemos una fistea y queresmo que los nombres con la class rojo <br>
+    se vean resaltados en rojo </p>
+    <ul>
+        <li class="rojo">Luis</li>
+        <li class="verde">Kelly</li>
+        <li class="rojo">kevin</li>
+        <li class="verde">Amaury</li>
+        <li class="rojo">axel</li>
+    </ul>
+    <button onclick="funcion()">Llamar a los rojos</button>
+</body>
+</html>
