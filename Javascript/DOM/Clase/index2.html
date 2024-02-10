@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function funcion(){
+
+            var nombre = document.querySelector("#nombre")
+            var apellido = document.querySelector(".apellido")
+            var resultado =  nombre + " " + apellido
+            alert(resultado)
+
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Selector querySelector</h1>
+    <br>
+    <p>Ventajas</p>
+    <ul>
+        <li>Mayor flexibilidad en los elementos</li>
+        <li>permite seleccionar por medio de selctores css</li>
+        <li>#id</li>
+        <li>.classe</li>
+    </ul>
+    <h2>Ejemplo</h2>
+    <label for="nombre">Nombre : </label>
+    <input type="text" name="nombre" id="nombre">
+    <br>
+    <label for="apellido">Apellido : </label>
+    <input type="text" name="apellido" class="apellido">
+    <br>
+    <button onabort="funcion()">Presioname</button>
+    
+</body>
+</html>

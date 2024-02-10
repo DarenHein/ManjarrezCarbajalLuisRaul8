@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function funcion(){
+            var nombre = document.getElementById("nombre").value
+            alert("hola " + nombre)
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Selector id </h1>
+    <p>caracteristicas</p>
+    <ul>
+        <li>Selecciona un elemnto html por su atributo id </li>
+        <li>Ideal para elementos unicos en el documento</li>
+        <li>solo para un elemento</li>
+    </ul>
+
+    <h2>Ejemplo</h2>
+
+    <label for="nombre">Nombre : </label>
+    <input type="text" name="nombre" id="nombre">
+    <br>
+    <button onclick="funcion()">Presioname</button>
+    
+</body>
+</html>
