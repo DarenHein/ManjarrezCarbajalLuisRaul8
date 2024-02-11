@@ -1,5 +1,7 @@
 // aqui van todas las validaciones en orden
 function validacion() {
+    let user = "Luis"
+    let pass2 = "1234"
     var nombre = document.getElementById("nombre").value;
     var contra = document.getElementById("passw").value;
     var mensaje1 = document.getElementById("mensajeError");
@@ -18,6 +20,11 @@ function validacion() {
     }
     if (acum == arreglo.length) {
         alert("Todo bien ");
+        if (nombre == user && contra == pass2 ){
+            window.location.href = "Menu.html" 
+        }else{
+            alert("contraseña incorrecta ")
+        }
     } else {
     }
 }
