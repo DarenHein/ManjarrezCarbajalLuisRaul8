@@ -19,7 +19,6 @@ function validacion() {
         }
     }
     if (acum == arreglo.length) {
-        alert("Todo bien ");
         if (nombre == user && contra == pass2 ){
             window.location.href = "Menu.html" 
         }else{
