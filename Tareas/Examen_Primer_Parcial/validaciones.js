@@ -1,4 +1,5 @@
 // aqui van todas las validaciones en orden
+// todo validacion menu 
 function validacion() {
     let user = "Luis"
     let pass2 = "1234"
@@ -26,4 +27,10 @@ function validacion() {
         }
     } else {
     }
+}
+
+// !calidacion del campo capital 
+function validacion_capital(){
+    var capital = document.getElementById("capital")
+    alert(capital)
 }
