@@ -31,6 +31,31 @@ function validacion() {
 
 // !calidacion del campo capital 
 function validacion_capital(){
-    var capital = document.getElementById("capital")
-    alert(capital)
+// agregarvalidacion por campo vacio y agregar span de que amrque el campo 
+    var capital = document.getElementById("capital").value
+    var mensaje = document.getElementById("mensaje")
+    mensaje.innerHTML=""
+    // primero verificamos que tenga algo la variable 
+    if (capital ==""){
+        mensaje.innerHTML="campo vacio"
+    }else {
+        // osea nico que tiene un dato 
+        let verificar = isNaN(capital) // lo ocupamos para saber si es numero o letra 
+        // true cadena 
+        // false numero 
+        if (verificar == true){
+            // es una cadena 
+            mensaje.innerHTML= "campo no valido"
+        }else {
+            // entonces quire decir que es un numero nico 
+            // ahora pondremos que numeros 0 o negativos no se puede 
+            let capital2 = parseFloat(capital)
+            if (capital2 <= 0 ){
+                mensaje.innerHTML = "El numero es menor a 0 o igual "
+            }else{
+                // aqui va cuando el numero esta bien 
+            }
+        }
+    }
+
 }
