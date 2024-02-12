@@ -29,6 +29,11 @@ function validacion() {
     }
 }
 
+document.addEventListener('DOMContentLoaded' , function(){ // todo este evento hace que prjimero cargue por completo la pagina web antes de que el boton haga algo es de cajon en cada codigo nicolas 
+  var boton = document.getElementById("boton")
+  boton.onclick = validacion
+})
+
 // !calidacion del campo capital 
 function validacion_capital(){
     var capital = document.getElementById("capital").value;
@@ -59,4 +64,10 @@ function validacion_capital(){
       }
     }
   }
+// ahora aremos el evento en el de menu ya para empezar la rtabla 
+document.addEventListener('DOMContentLoaded' ,function(){
+  var boton = document.getElementById("boton")
+  boton.onclick= validacion_capital
+})
+
   
