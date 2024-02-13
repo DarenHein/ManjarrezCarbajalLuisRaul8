@@ -29,17 +29,16 @@ function validacion_capital() {
             } else if (capital2 > 10000) {
                 mensaje.innerHTML = "El número debe ser menor o igual a 10000.";
             } else {
-                // El número es válido.
-                // Realizar la operación y mostrar el resultado en un alert.
+
                 var porcentaje = parseFloat(document.getElementById("porcentaje").value) / 100;
                 var dias = parseFloat(document.getElementById("dias").value);
 
                 if (!isNaN(porcentaje) && !isNaN(dias)) {
-                    // Mostrar el resultado en un alert
+                    
                     var resultado = (capital2 * (porcentaje / dias)).toFixed(2);
                     alert("El resultado del cálculo es: $" + resultado);
 
-                    // Generar la tabla de resultados
+                    
                     generarTablaResultados(dias, capital2, porcentaje);
                 }
             }
@@ -54,11 +53,11 @@ function generarTablaResultados(dias, capital, porcentaje) {
     for (let i = 1; i <= dias; i++) {
         var resultado = (capital * porcentaje / 365 * i).toFixed(2);
 
-        // Crear una fila para cada día y resultado
+        
         var fila = document.createElement("tr");
         fila.innerHTML = "<td>Día " + i + "</td><td>$" + resultado + "</td>";
 
-        // Agregar la fila al principio de la tabla
+        
         tablaResultados.insertBefore(fila, tablaResultados.firstChild);
     }
 }
