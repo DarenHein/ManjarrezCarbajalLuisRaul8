@@ -1,0 +1,7 @@
+
+# aqui vamos a limitar toas las imagenes videos de el repositorio 
+
+*.jpeg
+*.png 
+*.jpg
+*.mp4

@@ -4,73 +4,50 @@
 
 1. **JavaScript Básico:**
    - ¿Cuál es la palabra clave utilizada para declarar variables en JavaScript?
-     - a) var
-     - b) let
-     - c) const
+     
      - d) Todos los anteriores
 
 2. **JavaScript Básico:**
    - ¿Cuál es la función de `parseInt()` en JavaScript?
      - a) Convierte una cadena a un número entero
-     - b) Convierte un número decimal a un número entero
-     - c) Convierte una cadena a un número decimal
-     - d) Ninguna de las anteriores
-
+    
 3. **JavaScript Básico:**
    - ¿Cómo se declara un bucle "for" en JavaScript?
      - a) for (inicialización; condición; actualización)
-     - b) loop (inicialización; condición; actualización)
-     - c) for (inicialización; actualización; condición)
-     - d) while (condición)
 
 4. **JavaScript Básico:**
    - ¿Qué es una función de flecha en JavaScript?
-     - a) Una función que realiza operaciones aritméticas
-     - b) Una función que maneja eventos del teclado
+   
      - c) Una función definida con la sintaxis `() => {}`
-     - d) Ninguna de las anteriores
+
 
 5. **DOM (Document Object Model):**
    - ¿Cómo seleccionar un elemento por su id en el DOM usando JavaScript?
      - a) `getElementById()`
-     - b) `querySelector()`
-     - c) `getById()`
-     - d) `selectElementById()`
 
 6. **DOM (Document Object Model):**
    - ¿Cuál es el método que se utiliza para crear un nuevo elemento en el DOM?
      - a) `createElement()`
-     - b) `createNode()`
-     - c) `newElement()`
-     - d) `makeElement()`
 
 7. **DOM (Document Object Model):**
    - ¿Cómo se agrega un nuevo elemento al final de un elemento padre en el DOM?
-     - a) `parentElement.append()`
+
      - b) `parentElement.appendChild()`
-     - c) `parentElement.addElement()`
-     - d) `parentElement.add()`
+  
 
 8. **DOM (Document Object Model):**
    - ¿Cuál es la función del método `removeChild()` en el DOM?
-     - a) Eliminar un atributo de un elemento
      - b) Eliminar un elemento hijo de un elemento padre
-     - c) Eliminar un evento de un elemento
-     - d) Eliminar un estilo de un elemento
+
 
 9. **JavaScript Básico:**
    - ¿Qué devuelve `typeof` en JavaScript?
      - a) El tipo de datos de una variable
-     - b) El tamaño de una variable
-     - c) La longitud de una cadena
-     - d) Ninguna de las anteriores
+
 
 10. **JavaScript Básico:**
     - ¿Cuál es el resultado de `5 + '5'` en JavaScript?
       - a) 10
-      - b) 55
-      - c) "55"
-      - d) Error
 
 ### Respuestas:
 1. d) Todos los anteriores
