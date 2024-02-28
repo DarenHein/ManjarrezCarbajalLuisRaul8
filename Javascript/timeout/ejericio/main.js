@@ -9,11 +9,14 @@
 // primera prueba sera 3 colores 
 
 document.addEventListener('DOMContentLoaded',function(){
-    var arreglo = ["red","blue","green"]
     var div = document.getElementById('div')
 })
 
 function funcion(){
-    var contador = 0
-     
+    var contador = 0 
+    var div = document.getElementById('div')
+    var arreglo = ["red" , "blue" , "green"]
+
+    s
+    
 }
