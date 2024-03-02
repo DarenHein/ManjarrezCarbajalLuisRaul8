@@ -1,9 +1,0 @@
-
-Este código en Python emplea perceptrones para clasificar animales según características como hábitat, tamaño y agresividad.
-Dividido en cuatro perceptrones especializados, se entrenan con datos específicos y el usuario suministra datos para realizar predicciones.
-La estructura modular facilita la adaptabilidad y extensión. Cada perceptrón se entrena mediante iteraciones para mejorar las predicciones.
-La entrada del usuario incluye variables como humedad, temperatura y presencia de casas. El código evalúa cada categoría y, basándose en las 
-predicciones de hábitat, tamaño y agresividad, clasifica el tipo de animal. La efectividad depende de la calidad y cantidad de datos de 
-entrenamiento. Se destaca la necesidad de consideraciones éticas, como la
-privacidad en la recolección de 
-datos. En resumen, este código ilustra conceptos básicos de aprendizaje de máquinas, resaltando la importancia de la calidad de datos y la transparencia en el desarrollo de algoritmos de clasificación.
