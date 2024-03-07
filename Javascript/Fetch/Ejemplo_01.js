@@ -17,7 +17,7 @@ fetch(apiUrl) // es una funcion que obtiene recursos de una url o api
 
     })
     .then(data => { // nos devuelve los datos de la appi como objetos 
-        console.log("los datos de la appi " , data)
+        console.log(data)
     })
     .catch (error => { // captura un error si es que llega a pasar 
         console.error("no se pudo obtener los datos de la appi ")
