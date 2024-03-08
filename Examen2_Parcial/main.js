@@ -27,18 +27,41 @@ function validaciones(){
        if(bandera == true){
         mensaje.innerText = "Es una Cadena"
        }else{
-        mensaje.innerText = "Es un Numero"
         // ahora podemos trabajar ocn numeros 
-        var numero = parseFloat(mensaje)
+        var numero = parseFloat(campo_numerico)
         if (numero <= 0 ){
             mensaje.innerText = "Numero invalido"
         }else {
             // creo que son todas las validaciones o lo limito a 100 es que no se jajajaj 
-            
+            convertirDivisa() // ahora si hacemos lo de la api 
+
         }
        }
 
     }
-
-
 }
+function convertirDivisa() {
+    const amount = document.getElementById('amount').value;
+    const fromCurrency = document.getElementById('fromCurrency').value;
+    const toCurrency = document.getElementById('toCurrency').value;
+
+    const apiKey = 'TU_CLAVE_API'; // Reemplaza con tu clave API de Open Exchange Rates
+    const apiUrl = `https://open.er-api.com/v6/latest/${fromCurrency}?apikey=${apiKey}`;
+
+    fetch(apiUrl)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`Error de red - ${response.status}: ${response.statusText}`);
+        }
+        return response.json();
+      })
+      .then(data => {
+        const exchangeRate = data.rates[toCurrency];
+        const resultado = amount * exchangeRate;
+
+        document.getElementById('resultado').textContent = `${amount} ${fromCurrency} es aproximadamente ${resultado.toFixed(2)} ${toCurrency}`;
+      })
+      .catch(error => {
+        console.error('Error al recuperar datos:', error);
+      });
+  }
