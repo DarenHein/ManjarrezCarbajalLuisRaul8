@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Divisas</title>
+</head>
+<body>
+
+  <h1>Conversor de Divisas</h1>
+
+  <label for="amount">Cantidad en dólares:</label>
+  <input type="number" id="amount" placeholder="Ingrese la cantidad en dólares">
+
+  <label for="currency">Seleccione la divisa:</label>
+  <select id="currency">
+    <option value="EUR">Euro (EUR)</option>
+    <option value="GBP">Libra Esterlina (GBP)</option>
+    <option value="JPY">Yen Japonés (JPY)</option>
+    <!-- Agrega más opciones según sea necesario -->
+  </select>
+
+  <button onclick="convertirDivisa()">Convertir</button>
+
+  <p id="resultado"></p>
+
+  <script>
+    function convertirDivisa() {
+      const amount = document.getElementById('amount').value;
+      const currency = document.getElementById('currency').value;
+
+      const apiKey = 'TU_CLAVE_API'; // Reemplaza con tu clave API de Open Exchange Rates
+      const apiUrl = `https://open.er-api.com/v6/latest/USD?apikey=${apiKey}`;
+
+      fetch(apiUrl)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`Error de red - ${response.status}: ${response.statusText}`);
+          }
+          return response.json();
+        })
+        .then(data => {
+          const exchangeRate = data.rates[currency];
+          const resultado = amount * exchangeRate;
+
+          document.getElementById('resultado').textContent = `USD ${amount} es aproximadamente ${resultado.toFixed(2)} ${currency}`;
+        })
+        .catch(error => {
+          console.error('Error al recuperar datos:', error);
+        });
+    }
+  </script>
+
+</body>
+</html>
