@@ -45,7 +45,7 @@ function convertirDivisa() {
     const fromCurrency = document.getElementById('fromCurrency').value;
     const toCurrency = document.getElementById('toCurrency').value;
 
-    const apiKey = 'TU_CLAVE_API'; // Reemplaza con tu clave API de Open Exchange Rates
+    const apiKey = 'TU_CLAVE_API'; 
     const apiUrl = `https://open.er-api.com/v6/latest/${fromCurrency}?apikey=${apiKey}`;
 
     fetch(apiUrl)
