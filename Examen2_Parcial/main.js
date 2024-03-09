@@ -15,22 +15,27 @@ function validaciones(){
 
     var campo_numerico = document.getElementById('amount').value 
     var mensaje = document.getElementById('span1')
+    var imagen = document.getElementById('imagen')
+    imagen.src = "compu.gif"
     mensaje.innerText = " "
 
     if(campo_numerico == ""){
 
         mensaje.innerText = "No ingresaste nada"
+        imagen.src = "error.GIF"
 
     }else {
        var bandera = isNaN(campo_numerico)
 
        if(bandera == true){
         mensaje.innerText = "Es una Cadena"
+        imagen.src = "error.GIF"
        }else{
         // ahora podemos trabajar ocn numeros 
         var numero = parseFloat(campo_numerico)
         if (numero <= 0 ){
             mensaje.innerText = "Numero invalido"
+            imagen.src = "error.GIF"
         }else {
             // creo que son todas las validaciones o lo limito a 100 es que no se jajajaj 
             convertirDivisa() // ahora si hacemos lo de la api 
