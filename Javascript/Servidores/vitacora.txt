@@ -1,0 +1,15 @@
+
+// apuntes de express de js 
+
+** QUE ES EXPRESS 
+
+primero es un framwork 
+que ayuda a gestion de aplicaciones web con apis 
+ayuda a mnejar las tareas comunes de servidor web 
+manejar solicutues http 
+manejo de rutas 
+gestiona middleware 
+
+es como un sistema operativo para mi aplicacion web express
+nos ayuda a construir de forma mas eficiente nuestra aplicaicon movil 
+

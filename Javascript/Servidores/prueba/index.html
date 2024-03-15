@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+	<h1> Servidor con Express y html <h1>
+	<p id="mensaje"> <p>
+	<script>
+		// aqui aremos el api o la solicitud al server 
+		fetch('http://localhost:3000')
+		 .then(response => response.text())
+		 .then(data => {
+			// mostramos la respues deñ server 
+			document.getElementById('mensaje').innerText = data	
+		})
+		.then(error )
+	<script>   
+</body>
+</html>
