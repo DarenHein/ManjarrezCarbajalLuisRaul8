@@ -1,0 +1,6 @@
+
+
+descagrs nodemon y aprender a instalarlo y a ocuparlo 
+express generator 
+npm init que es ? 
+

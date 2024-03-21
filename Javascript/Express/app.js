@@ -12,7 +12,7 @@ const puerto = 3000
 // ruta del servidor que estara ala escucha 
 
 app.get('/',(req,res)=>{
-	res.send("hola este es mi servidor")
+	res.send("puto kevin")
 })
 
 

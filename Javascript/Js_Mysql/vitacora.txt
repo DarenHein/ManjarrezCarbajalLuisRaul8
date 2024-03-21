@@ -1,0 +1,26 @@
+
+
+vitacora de como ocupar mysql en node js 
+
+primero exportammos la libreria mysql 
+
+y depues aplicamos lo de datos 
+
+*host 
+*user 
+*password 
+*database 
+
+depues hcaemos la conexion 
+
+// ahora vamos a ingresar un dato en la base de datos desde js 
+
+conexion.query('consulta',(error,repsuesta)=> {
+
+	if(errpr){
+		//mensaje de error
+	}else {
+		// mensaje de confirmacion 
+	}
+
+})

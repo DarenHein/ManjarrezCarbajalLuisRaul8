@@ -1,30 +1,28 @@
 
-// ahora vamos a intenter conectar mi base de datos a un aplicacion de javascript 
-// necesitamos dos extenciones express y mysql 
+// vamos a conectar una base de datos de maria db a un 
+// aplciacion de node js 
 
-const express = require ('express')
-const mysql = require('mysql') // necesitamos la libreria 
+const mysql = require('mysql')
 
-// ahora conectamos la base de datos con el script 
+// ahora configuramos las conexiones 
+// como se llama contraseña  
+// usuario 
+// host 
+// constraseña 
 
-const app = express()
-const puerto = 3000
+const conexion = mysql.createConnection({
 
-// ahora creamos la conexion 
+	host : '127.0.0.1',
+	user : 'daren',
+	password : '5882', 
+	database : 'Personas',
 
-const db = mysql.createConnection({ // primero creamos la conexion 
-	host : "127.0.0.1", // lo estamos haciendo de forma local 
-	user : "daren_h", // el usuatio 
-	password : "5882", // la constr 
-	database : "Gee", // el nombre de la database 
 })
 
-// ahora verificamos si la conecion a sifdo exitosa 
-
-db.connect((err) => { // conectamos 
-	if(err){ // si eneuntra un error 
-	console.log("Error el intentar conectarse",err)
-	}else { // por si no lo encuentra 
-	console.log("conexion Exitosa") // fue tan belllo cunado lo viu 
+conexion.connect((error)=> {
+	if(error){
+		console.log("error en la conexcion " , error)
+	}else {
+		console.log("conexion exitosa")
 	}
 })

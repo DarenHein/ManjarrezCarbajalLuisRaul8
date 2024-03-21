@@ -13,3 +13,19 @@ gestiona middleware
 es como un sistema operativo para mi aplicacion web express
 nos ayuda a construir de forma mas eficiente nuestra aplicaicon movil 
 
+**
+buscar las intalaciones de 
+
+yeoman 
+nodemon 
+generator-express 
+
+ 
+ahora a base de lo que estudie hoy 
+
+"yeoman" es un creador de archivos 
+se ocupa en varios per yo lo estoy ocupando con express 
+para crear las cartpetas 
+
+npm nos crea un packe.json que en palabras simples en las 
+carptea con cosas de nuestro softare 

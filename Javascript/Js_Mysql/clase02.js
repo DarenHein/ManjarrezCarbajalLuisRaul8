@@ -1,46 +1,29 @@
 
 
-// otro ejejmplo de mysql con js  pero ahora haceindo un query 
+// aqui aremos una consulta ala base de datos 
 
-// primero importamos 
 const mysql = require('mysql')
-
-// configuramos la conexion 
-const db = mysql.createConnection({
-	host : "127.0.0.1",
-	user : "daren_h",
-	password : "5882",
-	database : "Gee",
+const conexion = mysql.createConnection({
+	host : '127.0.0.1',
+	user : 'daren',
+	password : '5882',
+	database : 'Personas'
 })
 
-db.connect((error)=> { // ahora verificamos que se conxion exitosa 
-
-	if (error){ // erro en conexion 
-		console.log("Error en conexion" , error)
-	}else{ // conexion exitosa 
-		console.log("conexion exitosa ")
-	}
-
-})
-
-// ahora vamos a jacer la consulta 
-
-const sql = "describe C_link "
-
-// ejecutamos la consulta select 
-
-// asl es la  consulta 
-// error es el error resultante almacenado en una variable 
-// consulta es el resultado en una variablepero aun no se que tipo de dato es 
-
-db.query(sql,(error,result)  => {
-
+conexion.connect((error) => {
 	if(error){
-		console.log("error en la consulra " , error )
+		console.log('error en la conexion de la base de datos')
+	}else{
+		console.log('conexcion exitosa')
+	}
+
+})
+// este es para leer los datos de la tabla 
+conexion.query('select * from persona' , (error,respuesta) => {
+
+	if (error){
+		console.log('error al tratar de hacer la consulta')
 	}else {
-		console.log("resultado de la consulta " , result)
+		console.log(respuesta)
 	}
 })
-
-
-
