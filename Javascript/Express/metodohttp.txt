@@ -1,0 +1,21 @@
+
+metodos http 
+
+hay varios pero ahorita me sentrare en los mas basicos 
+
+get -> es el principal es el mas sencillo de ocupar 
+	solicitar servicios o algo al server 
+	cunado ponemos una url en el navegador 
+	hacemos el metogo get por que le dicemos al servidor 
+	que nos devuelva la pagina web 
+
+post -> este es cunado mandamos nosotros informacion ala pagina web 
+	como un formulario de html el servidor la recoje y la procesa 
+
+put -> el put es actualizar miesntras el post manda nuevos datos al server 
+	el put los actualiza 
+
+delete -> como su nombre lo indica manda una solicitud para eliminar datos 
+	server 
+
+http -> escomo nuestra perra que que hace los mandados 
