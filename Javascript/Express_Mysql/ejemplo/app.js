@@ -3,8 +3,11 @@ const path = require('path');
 const mysql = require('mysql');
 
 const app = express();
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+
+// ocuapamos midleware global sin estas dos no fuinciona 
+// y los datos se llenaran 
+app.use(express.json());  // estos datos convierten los datos mandados por el html de json a objeto javscrit 
+app.use(express.urlencoded({ extended: true }));  // transforma los datos codificados a objeto javascrit 
 
 const conexion = mysql.createConnection({
     host: '127.0.0.1',
