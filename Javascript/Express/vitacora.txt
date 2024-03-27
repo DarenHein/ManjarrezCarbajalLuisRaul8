@@ -28,4 +28,9 @@ se ocupa en varios per yo lo estoy ocupando con express
 para crear las cartpetas 
 
 npm nos crea un packe.json que en palabras simples en las 
-carptea con cosas de nuestro softare 
+carptea con cosas de nuestro softare
+
+dia 27 marzo del 2024 
+hoy acabo de ver que si ponemos express nombre_proyecto 
+no genera el proyecto completo carpetas etc eso sera ultil 
+ 
