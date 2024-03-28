@@ -1,0 +1,9 @@
+#!/bin/usr/env node
+
+const app = require("../app")
+
+const server = app.listen(3000 , function() {
+
+	console.log("aplciacion corriendo en le puerto 3000")
+
+})

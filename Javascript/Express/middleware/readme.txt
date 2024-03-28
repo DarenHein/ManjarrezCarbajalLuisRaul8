@@ -5,9 +5,28 @@ el middletware
 son pequenas estaciones de trabajo que en nuestra aplicaion 
 surven para cada solicitud del cliente 
 
-puede habler globales como especificas 
+hay de 4 tipos 
 
-la primera que pondre aqui es la static que sirve para dar archivos crudos 
-como un html una imagen o un pdf 
+	globales 
+	locales 
+	creados 
+	de error 
+
+antes una analogia 
+			aplicacion 
+-----------------------------------------------------------------------
+	|		|
+	|		|
+carro   | midleware 	|midleware 	
+	|		|
+	|		|
+-----------------------------------------------------------------------
 
 
+podemos entender nuestra aplicacion como una gra carretera 
+cuando un carro(usuario quiere entrar en esta ) hay filtros de peaje 
+cada uno representa un midlware 
+
+el global podemos asociarlo como el peja para entrar ala carrertera 
+y los locales en cada sub carrters donde puede entrar nuestro carro 
+cada midleware o peaje tiene sus popoioes requerimientos para trabajar 

@@ -1,23 +1,24 @@
 
 
-// aqui vermos el middleware static 
-// este nos ayuda a servir archivos crudos 
-//
+// vamos a ocuapr el midleware de forma global 
+// static sirve apra el uso de archivos crudos o planos 
+
 const express = require('express')
+const path = require('path')
 const app = express()
 
-// uso de midleware static 
+app.use(express.static(path.join(__dirname,'public'))) // con esto señalamos que el midleware estara ubicaco 
+// en la carpeta donde esta el script dentro de la carptea public 
 
-app.use(express.static('carpeta')) // sirve datos de una carpeta que este en 
-// el directorio de este script 
+app.get('/imagen/:id' , (req,res) => {
 
-app.get('/' , (req,res) => {
+	const valor = req.params.id 
 
-	res.send('aplicacion usando midleware static')
+	res.sendFile(path.join(__dirname ,"public",valor ))
+
 
 })
 
-app.listen(3000 , () => {
+module.exports = app 
 
-	console.log('aplicaion corriendo en el puerto 3000 ')
-})
+
