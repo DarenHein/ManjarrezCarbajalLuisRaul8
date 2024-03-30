@@ -1,0 +1,51 @@
+¡Claro! Aquí tienes un examen básico sobre Express:
+
+1. ¿Qué es Express y para qué se utiliza?
+
+	es un framework para facilitar la creacion de aplicaciones web 
+
+2. Explica la diferencia entre `app.get()` y `app.post()` en Express.
+
+	se ocupan para mediar rutas en las solicitudes http 
+	metodo get es cuando el usuario (navegador) solicita algo 
+	y el servidor la aplciacion se la devuelve 
+
+	el metodo post es cunado el cliente manda informacion 
+	al servidor para ser procesada 
+
+3. ¿Qué es un middleware en Express y cuál es su propósito?
+
+	son pedasos de codigo que cumplen una funcion especidifica 
+	antes de entrar ala ruta o en la ruta 
+	por que hay de 3 tipos 
+	global que afecta a todas las rutas 
+	local cuando ya se encuentra en la ruta 
+	creados o porsonalizados son lso que nosotros ceramos 
+4. ¿Cómo se manejan los parámetros de ruta en Express?
+
+	yo recuerdo que hay dos 
+	params 
+	body 
+	el aprams es cunado son dinamicos 
+	el body es cunado vienen en el cuerpo de la solicitud 
+
+5. ¿Qué hace el método `res.send()` en Express y cuál es su importancia?
+
+	el servidor manda una respuesta 
+	res es un callback junto con req y next 
+6. ¿Cuál es el propósito del método `app.use()` en Express?
+	es el metodo que s eocupa par alos midlwares 
+7. ¿Qué es el enrutamiento estático en Express y cómo se implementa?
+8. Explica cómo se manejan las solicitudes de formularios en Express.
+	primero creamos un html 
+	despues con un midleware transformamos el dato tipo json de la 
+	ruta y lostransofrmaos en obj js para ponerlo ocupar 
+	
+9. ¿Qué son los códigos de estado HTTP y por qué son importantes en Express?
+
+	son los stuatus 200,300,400 etc son apra que el servidor mande una repsuesta 
+
+
+10. Describe cómo se manejan los errores en Express.
+
+Espero que encuentres útil este examen para evaluar tus conocimientos sobre Express. Si tienes alguna pregunta adicional o necesitas más información sobre alguno de los temas, no dudes en preguntar.

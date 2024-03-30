@@ -1,0 +1,16 @@
+{
+
+	"Mascotas" : [
+
+		{
+		"nombre" : "Argos", 
+		"raza" : "pitbull", 
+		"edad" : 8
+		},	
+		{
+		"nombre" : "Cora",
+		"raza" : "pitbull",
+		"Edad" : 9 
+		}
+	]
+}

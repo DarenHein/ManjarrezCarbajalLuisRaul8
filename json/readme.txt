@@ -20,4 +20,12 @@ y el valor puede ser cualquier tipo de dato
 
 }
 
+ahora vamos a ahbalr de los json anidados 
+o matrices de json se ocupan con el simbolo [] 
+son una clave que sus valores son 1 o mas json dentro del valor 
+en el documento matriz.json hay un ejemplo 
 
+RECOMENDACIONES 
+
+	ponerles id a cada elemento para hacerlo unico y 
+	facilitar su ubicacion 

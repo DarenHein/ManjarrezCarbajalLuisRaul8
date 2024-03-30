@@ -1,0 +1,12 @@
+
+{
+	"persona" : {
+		"nombre":"Luis", 
+		"Apellido" : "Manjarrez"
+	},
+	"Mascotas" : {
+		"nombre" : "Argos", 
+		"especie" : "canina"
+	}
+
+}
