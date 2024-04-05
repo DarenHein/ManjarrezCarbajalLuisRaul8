@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function hola() {
+            var mensaje = document.getElementById('mensaje')
+            mensaje.innerHTML = ''
+            var numero = document.getElementById('numero').value
+            const url = 'https://pokeapi.co/api/v2/pokemon/' + numero
+
+            fetch(url)
+                .then(response => {
+                    if (!response) {
+                        console.log('erroe en la conexion')
+                    }
+                    return response.json()
+                })
+                .then(data => {
+                    console.log(data.name)
+                    mensaje.innerHTML = data.name
+                })
+                .catch(error => {
+                    console.log(error)
+                })
+
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Ingresa el numero del pokemon</h1>
+    <label for="numero">Numero : </label>
+    <input type="text" , id="numero">
+    <br>
+    <br>
+    <button onclick="hola()">Presioname</button>
+    <br>
+    <br>
+    <span style="color: red;" id="mensaje"></span>
+</body>
+
+</html>

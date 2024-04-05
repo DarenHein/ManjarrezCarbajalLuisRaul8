@@ -1,0 +1,49 @@
+
+ _____    _       _     
+|  ___|__| |_ ___| |__  
+| |_ / _ \ __/ __| '_ \ 
+|  _|  __/ || (__| | | |
+|_|  \___|\__\___|_| |_|
+                        
+                           
+Que es un api fetch 
+hacemos solicitud al server nosotros como clientes 
+
+nosotros solicitamos recursos que ya existen 
+
+haber una explciacion con mis palabras alv 
+
+una api toma recursos de un sever y este server esta conectado a una base de 
+datos 
+
+persona -> api -> server -> data base 
+
+la persona cliente o nevaegador hace uns peticion la api habla con el server 
+y sever a su ves habla con la base de datos esta retorna una respuesta en json que 
+se la manda a ala ala api la respuesta de la solicutud 
+
+las api reste se basan en 
+3 partes dos .then uno que gestiona la conexion y toro que gestiona los datos 
+recividos y el 3 que es el catch que maneja los errores 
+
+fetch(url)
+
+	.then(response => {
+		// codigo de conexion 
+	})
+	.then(data => {
+		// codigo de datos o manejo 
+	})
+	.catch(errpr => {
+		// sistema de gestion de errores
+	})
+
+ahora los data tiene unos metodos para manejar los datos 
+
+si imprimirmos data solamnete console.log(data) nos devuelve toodos 
+los datos de la api 
+
+pero lso emtodos son como filtros 
+
+count -> devuelve el total de elemntos de la api 
+
