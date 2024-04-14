@@ -44,7 +44,18 @@ app.get('/',(req,res) => {
 app.get('/alumnos/:alumnos' , (req,res) => {
 	var id = req.params.alumnos
 	console.log("parametro recibido -> " , id)
-	res.send("respuesta recibida")
+	//res.send("respuesta recibida")
+	// ahora hacemos la consulra sql 
+	let consulta = "select * from alumnos where id = ?"
+	conexion.query(consulta , [id] , (error , resultado) => {
+		if(error){
+			console.log(error)
+			res.status(500).send("error en la consulta")
+		}else{
+			res.json(resultado)
+			console.log(resultado)
+		}
+	})
 })
 
 module.exports = app

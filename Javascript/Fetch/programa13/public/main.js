@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded' , function(){
     boton.addEventListener('click' , function(){
         var campo = document.getElementById('nombre').value
         var mensaje = document.getElementById('mensaje')
+        var usuario = document.getElementById('usuario')
         if(isNaN(campo) || campo == ""){
             mensaje.innerHTML = "campos vacios o caracteres"
         }else {
@@ -23,6 +24,24 @@ document.addEventListener('DOMContentLoaded' , function(){
                         }else {
                             return response.json()
                         }
+                    })
+                    .then(data => {
+                        
+                            var nombre = data.map(alumno => {
+                                const h1nombre = document.createElement('h1')
+                                h1nombre.innerHTML = alumno.nombre
+
+                                const h1apellido = document.createElement('h1')
+
+                                h1apellido.innerHTML = alumno.apellido
+
+                                document.body.appendChild(h1nombre)
+
+                                document.body.appendChild(h1apellido)
+
+                            })
+                                                  
+
                     })
             }
         }
