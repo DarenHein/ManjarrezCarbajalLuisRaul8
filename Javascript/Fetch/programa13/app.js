@@ -57,5 +57,24 @@ app.get('/alumnos/:alumnos' , (req,res) => {
 		}
 	})
 })
+app.get('/todos',(req,res) => {
 
+	// en esta ruta vamos a devilvear los 30 alumnos
+	// que se enceuntrar registrados en la base de datos 
+	// despues vmaos a mandarlos ala api y esta los tranfromara en 
+	// una tabla dinamica 
+
+	let consulta = 'select * from alumnos'
+	// ahora hacemos la consulta ala base de datos 
+	conexion.query(consulta, (error , resultado) => {
+		if(error){
+			console.log("no se puedo ejecuatar la consulta")
+		}else{
+			res.json(resultado)
+			console.log(resultado)
+		}
+
+	})
+
+})
 module.exports = app
