@@ -4,10 +4,12 @@ document.addEventListener('DOMContentLoaded' , function(){
 
     var boton = document.getElementById('boton')
     var boton2 = document.getElementById('boton2')
+    var boton3 = document.getElementById('boton3')
     boton.addEventListener('click' , function(){
         var campo = document.getElementById('nombre').value
         var mensaje = document.getElementById('mensaje')
         var usuario = document.getElementById('usuario')
+        var div_tablas = document.getElementById('mi_div4')
         if(isNaN(campo) || campo == ""){
             mensaje.innerHTML = "campos vacios o caracteres"
         }else {
@@ -49,7 +51,7 @@ document.addEventListener('DOMContentLoaded' , function(){
                                 fila2.appendChild(celda)
                             }
                             tabla.appendChild(fila2)
-                            document.body.appendChild(tabla)
+                            div_tablas.appendChild(tabla)
                             
                             
                                                
@@ -63,6 +65,7 @@ document.addEventListener('DOMContentLoaded' , function(){
 
     boton2.addEventListener('click' , function(){
         // damos la url 
+        var div_tablas = document.getElementById('mi_div4')
         const url = "http://127.0.0.1:3000/todos/"
         fetch(url)
             .then(response => {
@@ -111,13 +114,32 @@ document.addEventListener('DOMContentLoaded' , function(){
                     tabla.appendChild(fila)
                 }
 
-                document.body.appendChild(tabla)
-                
+                //document.body.appendChild(tabla)
+                div_tablas.appendChild(tabla)
                 
 
             })
             .catch(error => {
                 console.error(error)
             })
+    })
+
+    // ahora el boton de profesores 
+    boton3.addEventListener('click' , function(){
+        var url = "http://127.0.0.1:3000/docentes/"
+        fetch(url)
+        .then(response => {
+            if(!response.ok){
+                console.log("error")
+            }else{
+                return response.json
+            }
+        })
+        .then(data => {
+            var arreglo = data
+            var longitd = arreglo.length
+            var titulos = Object.keys(arreglo[0])
+            
+        })
     })
 })

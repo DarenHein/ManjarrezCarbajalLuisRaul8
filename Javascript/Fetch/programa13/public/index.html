@@ -1,21 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="main.js"></script>
+    <style>
+        #mi_div {
+            position: absolute;
+            top: 0px;
+            left: 0;
+            background-color: gainsboro;
+            width: 1020px;
+            height: 50px;
+        }
+        #mi_div2{
+            position: absolute;
+            top: 12px;
+            left: 600px;
+        }
+        #mi_div3{
+            position: absolute;
+            top: 70px;
+            left: 60px;
+        }
+        #mi_div4{
+            position: absolute;
+            top: 100px;
+            left: 400px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hola</h1>
-    <label for="nombre">Numero id : </label>
-    <input type="text"  name="nombre"  id="nombre">
-    <br>
-    <br>
-    <button id="boton">presioname</button>
-    <span id="mensaje"></span>
-    <br>
-    <br>
-    <button id="boton2">Mostrar Todo</button>
+    <div id="mi_div">
+        <div id="mi_div2">
+            <input type="text" name="nombre" id="nombre">
+            <button id="boton">presioname</button>
+            <span id="mensaje"></span>
+        </div>
+    </div>
+    <div id="mi_div3">
+
+        <button id="boton2">Mostrar Alumnos</button>
+        <br>
+        <button id="boton3">Mostrar Docentes</button>
+
+    </div>
+    <div id="mi_div4">
+        
+    </div>
 </body>
+       
 </html>

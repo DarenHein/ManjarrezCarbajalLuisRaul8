@@ -77,4 +77,23 @@ app.get('/todos',(req,res) => {
 	})
 
 })
+
+// mostrar los docentes 
+app.get('/docentes' , (req,res) => {
+	/*
+		en este ruta vamos a mostrar todos los docentes 
+		que se encuntran en la base de datos 
+		se acaba de crear la tabla docentes con cera de
+		10 docetes
+	*/
+	const consulta = "select * from profesores"
+	conexion.query(consulta , (error , resultado ) => {
+		if(error){
+			console.log("no se pudo realizar la consulta")
+		}else{
+			res.json(resultado)
+		}
+	})
+
+})
 module.exports = app
