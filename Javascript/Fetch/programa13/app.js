@@ -27,7 +27,7 @@ conexion.connect((error) => {
 })
 
 app.use(express.static(path.join(__dirname,"public")))
-
+app.use(express.urlencoded({ extended: true }))
 // Configuración de CORS
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
@@ -92,6 +92,26 @@ app.get('/docentes' , (req,res) => {
 			console.log("no se pudo realizar la consulta")
 		}else{
 			res.json(resultado)
+		}
+	})
+
+})
+
+// ahora vamos a crear la ruta para los post de la los usuarios 
+app.post('/comunicados', (req,res) => {
+
+	var nombre = req.body.nombre
+	var mensaje = req.body.mensaje
+
+	console.log(nombre)
+	console.log(mensaje)
+
+	const consulta = 'insert into comunicados(nombre,mensaje) values (?,?)'
+	
+	// emepzamos el query 
+	conexion.query(consulta , [nombre] , [mensaje] , (error,resultado) => {
+		if(error){
+			console.log(error)
 		}
 	})
 
