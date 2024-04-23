@@ -1,0 +1,134 @@
+
+-- Active: 1712516643858@@127.0.0.1@3306
+CREATE DATABASE tienda;
+
+use tienda;
+
+create table usuario(
+    id VARCHAR(255) PRIMARY KEY, 
+    nombre VARCHAR(255),
+    email VARCHAR(255),
+    contra VARCHAR(255),
+    nickname VARCHAR(255),
+    estado VARCHAR(255) DEFAULT "activo",
+    fecha date,
+    rol VARCHAR(255)
+);
+
+INSERT INTO usuario (id, nombre, email, contra, nickname, estado, fecha, rol) VALUES
+('1', 'John Doe', 'john.doe@example.com', 'contraseña1', 'john_doe', 'activo', CURRENT_DATE(), 'comun'),
+('2', 'Jane Doe', 'jane.doe@example.com', 'contraseña2', 'jane_doe', 'activo', CURRENT_DATE(), 'comun'),
+('3', 'Michael Smith', 'michael.smith@example.com', 'contraseña3', 'michael_smith', 'activo', CURRENT_DATE(), 'comun'),
+('4', 'Emily Johnson', 'emily.johnson@example.com', 'contraseña4', 'emily_johnson', 'activo', CURRENT_DATE(), 'comun'),
+('5', 'William Brown', 'william.brown@example.com', 'contraseña5', 'william_brown', 'activo', CURRENT_DATE(), 'comun'),
+('6', 'Emma Wilson', 'emma.wilson@example.com', 'contraseña6', 'emma_wilson', 'activo', CURRENT_DATE(), 'comun'),
+('7', 'Michael Garcia', 'michael.garcia@example.com', 'contraseña7', 'michael_garcia', 'activo', CURRENT_DATE(), 'comun'),
+('8', 'Olivia Rodriguez', 'olivia.rodriguez@example.com', 'contraseña8', 'olivia_rodriguez', 'activo', CURRENT_DATE(), 'comun'),
+('9', 'William Martinez', 'william.martinez@example.com', 'contraseña9', 'william_martinez', 'activo', CURRENT_DATE(), 'comun'),
+('10', 'Sophia Hernandez', 'sophia.hernandez@example.com', 'contraseña10', 'sophia_hernandez', 'activo', CURRENT_DATE(), 'comun'),
+('11', 'James Lopez', 'james.lopez@example.com', 'contraseña11', 'james_lopez', 'activo', CURRENT_DATE(), 'comun'),
+('12', 'Emma Gonzalez', 'emma.gonzalez@example.com', 'contraseña12', 'emma_gonzalez', 'activo', CURRENT_DATE(), 'comun'),
+('13', 'Benjamin Perez', 'benjamin.perez@example.com', 'contraseña13', 'benjamin_perez', 'activo', CURRENT_DATE(), 'comun'),
+('14', 'Mia Wilson', 'mia.wilson@example.com', 'contraseña14', 'mia_wilson', 'activo', CURRENT_DATE(), 'comun'),
+('15', 'Liam Sanchez', 'liam.sanchez@example.com', 'contraseña15', 'liam_sanchez', 'activo', CURRENT_DATE(), 'comun'),
+('16', 'Charlotte Torres', 'charlotte.torres@example.com', 'contraseña16', 'charlotte_torres', 'activo', CURRENT_DATE(), 'comun'),
+('17', 'Oliver Flores', 'oliver.flores@example.com', 'contraseña17', 'oliver_flores', 'activo', CURRENT_DATE(), 'comun'),
+('18', 'Amelia Rivera', 'amelia.rivera@example.com', 'contraseña18', 'amelia_rivera', 'activo', CURRENT_DATE(), 'comun'),
+('19', 'Elijah Gomez', 'elijah.gomez@example.com', 'contraseña19', 'elijah_gomez', 'activo', CURRENT_DATE(), 'comun'),
+('20', 'Ava Diaz', 'ava.diaz@example.com', 'contraseña20', 'ava_diaz', 'activo', CURRENT_DATE(), 'comun'),
+('21', 'Lucas Wright', 'lucas.wright@example.com', 'contraseña21', 'lucas_wright', 'activo', CURRENT_DATE(), 'comun'),
+('22', 'Harper Singh', 'harper.singh@example.com', 'contraseña22', 'harper_singh', 'activo', CURRENT_DATE(), 'comun'),
+('23', 'Mason Campbell', 'mason.campbell@example.com', 'contraseña23', 'mason_campbell', 'activo', CURRENT_DATE(), 'comun'),
+('24', 'Evelyn Ward', 'evelyn.ward@example.com', 'contraseña24', 'evelyn_ward', 'activo', CURRENT_DATE(), 'comun'),
+('25', 'Logan Foster', 'logan.foster@example.com', 'contraseña25', 'logan_foster', 'activo', CURRENT_DATE(), 'comun'),
+('26', 'Aria Gonzales', 'aria.gonzales@example.com', 'contraseña26', 'aria_gonzales', 'activo', CURRENT_DATE(), 'comun'),
+('27', 'Luna Bryant', 'luna.bryant@example.com', 'contraseña27', 'luna_bryant', 'activo', CURRENT_DATE(), 'comun'),
+('28', 'Carter Alexander', 'carter.alexander@example.com', 'contraseña28', 'carter_alexander', 'activo', CURRENT_DATE(), 'comun'),
+('29', 'Mateo Russell', 'mateo.russell@example.com', 'contraseña29', 'mateo_russell', 'activo', CURRENT_DATE(), 'comun'),
+('30', 'Riley Marshall', 'riley.marshall@example.com', 'contraseña30', 'riley_marshall', 'activo', CURRENT_DATE(), 'comun');
+
+
+INSERT INTO usuario (id, nombre, email, contra, nickname, estado, fecha, rol)
+VALUES
+('31', 'Isabella Anderson', 'isabella.anderson@example.com', 'contraseña31', 'isabella_anderson', 'activo', CURRENT_DATE(), 'comun'),
+('32', 'Noah Jackson', 'noah.jackson@example.com', 'contraseña32', 'noah_jackson', 'activo', CURRENT_DATE(), 'comun'),
+('33', 'Emma Miller', 'emma.miller@example.com', 'contraseña33', 'emma_miller', 'activo', CURRENT_DATE(), 'comun'),
+('34', 'Liam Williams', 'liam.williams@example.com', 'contraseña34', 'liam_williams', 'activo', CURRENT_DATE(), 'comun'),
+('35', 'Olivia Jones', 'olivia.jones@example.com', 'contraseña35', 'olivia_jones', 'activo', CURRENT_DATE(), 'comun'),
+('36', 'William Brown', 'william.brown@example.com', 'contraseña36', 'william_brown', 'activo', CURRENT_DATE(), 'comun'),
+('37', 'Sophia Davis', 'sophia.davis@example.com', 'contraseña37', 'sophia_davis', 'activo', CURRENT_DATE(), 'comun'),
+('38', 'James Moore', 'james.moore@example.com', 'contraseña38', 'james_moore', 'activo', CURRENT_DATE(), 'comun'),
+('39', 'Emma Wilson', 'emma.wilson@example.com', 'contraseña39', 'emma_wilson', 'activo', CURRENT_DATE(), 'comun'),
+('40', 'Benjamin Thomas', 'benjamin.thomas@example.com', 'contraseña40', 'benjamin_thomas', 'activo', CURRENT_DATE(), 'comun'),
+('41', 'Mia Thompson', 'mia.thompson@example.com', 'contraseña41', 'mia_thompson', 'activo', CURRENT_DATE(), 'comun'),
+('42', 'Liam Sanchez', 'liam.sanchez@example.com', 'contraseña42', 'liam_sanchez', 'activo', CURRENT_DATE(), 'comun'),
+('43', 'Charlotte Torres', 'charlotte.torres@example.com', 'contraseña43', 'charlotte_torres', 'activo', CURRENT_DATE(), 'comun'),
+('44', 'Oliver Flores', 'oliver.flores@example.com', 'contraseña44', 'oliver_flores', 'activo', CURRENT_DATE(), 'comun'),
+('45', 'Amelia Rivera', 'amelia.rivera@example.com', 'contraseña45', 'amelia_rivera', 'activo', CURRENT_DATE(), 'comun'),
+('46', 'Elijah Gomez', 'elijah.gomez@example.com', 'contraseña46', 'elijah_gomez', 'activo', CURRENT_DATE(), 'comun'),
+('47', 'Ava Diaz', 'ava.diaz@example.com', 'contraseña47', 'ava_diaz', 'activo', CURRENT_DATE(), 'comun'),
+('48', 'Lucas Wright', 'lucas.wright@example.com', 'contraseña48', 'lucas_wright', 'activo', CURRENT_DATE(), 'comun'),
+('49', 'Harper Singh', 'harper.singh@example.com', 'contraseña49', 'harper_singh', 'activo', CURRENT_DATE(), 'comun');
+
+INSERT INTO usuario (id, nombre, email, contra, nickname, estado, fecha, rol)
+VALUES
+('50', 'kevin ariam', 'kevin@example.com', 'contraseña51', 'kevin', 'activo', CURRENT_DATE(), 'comun'),
+('51', 'Isabella Anderson', 'isabella.anderson@example.com', 'contraseña51', 'isabella_anderson', 'activo', CURRENT_DATE(), 'comun'),
+('52', 'Noah Jackson', 'noah.jackson@example.com', 'contraseña52', 'noah_jackson', 'activo', CURRENT_DATE(), 'comun'),
+('53', 'Emma Miller', 'emma.miller@example.com', 'contraseña53', 'emma_miller', 'activo', CURRENT_DATE(), 'comun'),
+('54', 'Liam Williams', 'liam.williams@example.com', 'contraseña54', 'liam_williams', 'activo', CURRENT_DATE(), 'comun'),
+('55', 'Olivia Jones', 'olivia.jones@example.com', 'contraseña55', 'olivia_jones', 'activo', CURRENT_DATE(), 'comun'),
+('56', 'William Brown', 'william.brown@example.com', 'contraseña56', 'william_brown', 'activo', CURRENT_DATE(), 'comun'),
+('57', 'Sophia Davis', 'sophia.davis@example.com', 'contraseña57', 'sophia_davis', 'activo', CURRENT_DATE(), 'comun'),
+('58', 'James Moore', 'james.moore@example.com', 'contraseña58', 'james_moore', 'activo', CURRENT_DATE(), 'comun'),
+('59', 'Emma Wilson', 'emma.wilson@example.com', 'contraseña59', 'emma_wilson', 'activo', CURRENT_DATE(), 'comun'),
+('60', 'Benjamin Thomas', 'benjamin.thomas@example.com', 'contraseña60', 'benjamin_thomas', 'activo', CURRENT_DATE(), 'comun'),
+('61', 'Mia Thompson', 'mia.thompson@example.com', 'contraseña61', 'mia_thompson', 'activo', CURRENT_DATE(), 'comun'),
+('62', 'Liam Sanchez', 'liam.sanchez@example.com', 'contraseña62', 'liam_sanchez', 'activo', CURRENT_DATE(), 'comun'),
+('63', 'Charlotte Torres', 'charlotte.torres@example.com', 'contraseña63', 'charlotte_torres', 'activo', CURRENT_DATE(), 'comun'),
+('64', 'Oliver Flores', 'oliver.flores@example.com', 'contraseña64', 'oliver_flores', 'activo', CURRENT_DATE(), 'comun'),
+('65', 'Amelia Rivera', 'amelia.rivera@example.com', 'contraseña65', 'amelia_rivera', 'activo', CURRENT_DATE(), 'comun'),
+('66', 'Elijah Gomez', 'elijah.gomez@example.com', 'contraseña66', 'elijah_gomez', 'activo', CURRENT_DATE(), 'comun'),
+('67', 'Ava Diaz', 'ava.diaz@example.com', 'contraseña67', 'ava_diaz', 'activo', CURRENT_DATE(), 'comun'),
+('68', 'Lucas Wright', 'lucas.wright@example.com', 'contraseña68', 'lucas_wright', 'activo', CURRENT_DATE(), 'comun'),
+('69', 'Harper Singh', 'harper.singh@example.com', 'contraseña69', 'harper_singh', 'activo', CURRENT_DATE(), 'comun');
+
+INSERT INTO usuario (id, nombre, email, contra, nickname, estado, fecha, rol)
+VALUES
+('70', 'Luis Manjarrez', 'luis.manjarrez@example.com', 'contraseña70', 'luis_manjarrez', 'activo', CURRENT_DATE(), 'admin'),
+('71', 'Ava Diaz', 'ava.diaz@example.com', 'contraseña71', 'ava_diaz', 'activo', CURRENT_DATE(), 'admin'),
+('72', 'Lucas Wright', 'lucas.wright@example.com', 'contraseña72', 'lucas_wright', 'activo', CURRENT_DATE(), 'admin'),
+('73', 'Harper Singh', 'harper.singh@example.com', 'contraseña73', 'harper_singh', 'activo', CURRENT_DATE(), 'admin');
+
+CREATE TABLE figura (
+
+  ID_figura VARCHAR(255) PRIMARY KEY,
+  nombre VARCHAR(255) NOT NULL,
+  marca VARCHAR(255) NOT NULL,
+  franquicia_serie VARCHAR(255),
+  descripcion TEXT,
+  precio DECIMAL(10,2) NOT NULL,
+  stock INT NOT NULL,
+  fecha_lanzamiento DATE,
+  estatus VARCHAR(255) NOT NULL
+);
+
+INSERT INTO figura (ID_figura, nombre, marca, franquicia_serie, descripcion, precio, stock, fecha_lanzamiento, estatus)
+VALUES
+('FIG001', 'Monkey D. Luffy', 'Bandai', 'One Piece', 'Figura de acción de Monkey D. Luffy en pose de ataque. Material: PVC. Tamaño: 18 cm.', 39.99, 15, '2023-10-04', 'Disponible'),
+('FIG002', 'Nezuko Kamado', 'Good Smile Company', 'Demon Slayer: Kimetsu no Yaiba', 'Figura Demon Slayer: Kimetsu no Yaiba - Nezuko Kamado. Material: ABS/PVC. Tamaño: 15 cm.', 29.99, 10, '2022-12-21', 'Disponible'),
+('FIG003', 'Naruto Uzumaki', 'Tamashii Nations', 'Naruto Shippuden', 'Figura S.H. Figuarts: Naruto Uzumaki - Hokage. Material: PVC/ABS. Tamaño: 17 cm.', 59.99, 8, '2021-03-18', 'Agotado'),
+('FIG004', 'Son Goku', 'Bandai', 'Dragon Ball Z', 'Figura Dragon Ball Z - S.H. Figuarts: Son Goku (traje de batalla). Material: PVC/ABS. Tamaño: 16 cm.', 49.99, 20, '2020-09-02', 'Disponible'),
+('FIG005', 'Boa Hancock', 'Banpresto', 'One Piece', 'Figura One Piece - Grandista Boa Hancock: The Pirate Empress. Material: PVC. Tamaño: 28 cm.', 89.99, 5, '2024-02-14', 'Disponible');
+
+CREATE TABLE ventas (
+  ID_venta INT PRIMARY KEY AUTO_INCREMENT,
+  fecha_venta DATE NOT NULL,
+  usuario VARCHAR(255) NOT NULL,
+  FOREIGN KEY (usuario) REFERENCES usuario(id),
+  ID_figura VARCHAR(255) NOT NULL,
+  FOREIGN KEY (ID_figura) REFERENCES figura(ID_figura),
+  cantidad INT NOT NULL,
+  precio_total DECIMAL(10,2) NOT NULL
+);
+
