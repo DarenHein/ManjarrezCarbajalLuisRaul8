@@ -7,6 +7,11 @@ const path = require('path')
 const mysql = require('mysql')
 
 
+// midlewares 
+app.use(express.static(path.join(__dirname,"public","image")))
+app.use(cors())
+
+
 const conexion = mysql.createConnection({
 	host : "127.0.0.1",
 	user : "daren",
@@ -24,10 +29,8 @@ conexion.connect((error) => {
 	}
 })
 
-app.use(cors())
-
 app.get('/',(req,res) => {
-	res.send("hola mundo")
+	res.sendFile(path.join(__dirname,"public","index.html"))
 })
 
 module.exports = app 
