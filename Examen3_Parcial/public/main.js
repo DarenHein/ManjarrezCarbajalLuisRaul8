@@ -13,31 +13,37 @@ document.addEventListener('click' , function(){
 
     imagen1.addEventListener('click' , function(){
         console.log("hola mundo 1 ")
-        mostrar_detalles()
+        var opcion = 1 
+        mostrar_detalles(opcion)
     })
 
     imagen2.addEventListener('click' , function(){
         console.log("hola mundo 2 ")
-        mostrar_detalles()
+        var opcion = 2 
+        mostrar_detalles(opcion)
     })
 
     imagen3.addEventListener('click' , function(){
         console.log("hola mundo 3 ")
-        mostrar_detalles()
+        var opcion = 3 
+        mostrar_detalles(opcion)
     })
 
     imagen4.addEventListener('click' , function(){
         console.log("hola mundo 4 ")
-        mostrar_detalles()
+        var opcion = 4 
+        mostrar_detalles(opcion)
     })
 
     imagen5.addEventListener('click' , function(){
         console.log("hola mundo 5 ")
-        mostrar_detalles()
+        var opcion = 5 
+        mostrar_detalles(opcion)
     })
 })
 
-function mostrar_detalles(){
+function mostrar_detalles(opcion){
+    var div_general = document.getElementById("imagenes")
     var div_imagen = document.getElementById("imagen1")
     var div_imagen2 = document.getElementById("imagen2")
     var div_imagen3 = document.getElementById("imagen3")
@@ -49,4 +55,76 @@ function mostrar_detalles(){
     div_imagen3.style.display = "none"
     div_imagen4.style.display = "none"
     div_imagen5.style.display = "none"
+
+    div_general.style.height = '150%'
+
+    switch(opcion){
+        case 1 :
+            var imagen = "images/luffy.jpeg" 
+            var nombre = "lufy"
+            break
+        case 2 : 
+             var imagen = "images/boa.jpeg"
+             var nombre = "boa"
+        break
+        case 3 : 
+             var imagen = "images/goku.jpeg"
+             var nombre = "goku"
+        break
+        case 4 : 
+             var imagen = "images/nezuco.jpeg"
+             var nombre = "nezuco"
+        break
+        case 5 : 
+             var imagen = "images/naruto.jpeg"
+             var nombre = "naruto"
+        break
+    }
+
+    var imagen_referencia = document.createElement('img')
+    imagen_referencia.setAttribute("src", imagen)
+
+    imagen_referencia.style.position = "absolute"
+    imagen_referencia.style.top = "12%"
+    imagen_referencia.style.left = "10%"
+    imagen_referencia.style.width = "300px"
+    div_general.appendChild(imagen_referencia);
+
+    const url = "http://127.0.0.1:3000/mostrar/" + nombre
+
+    fetch(url)
+    
+    .then(response => {
+        if(!response.ok){
+            // aqui hay que agregar una imagen
+            console.log("error en la conexion con la url " , url)
+        }else{
+            return response.json()
+        }
+    })
+    .then(data => {
+        
+        console.log(data)
+        var arreglo = data 
+        var llaves = Object.keys(arreglo[0])
+        var valores = Object.values(arreglo[0])
+
+        var h1 = document.createElement('h1')
+        h1.innerHTML = valores[1]
+        h1.style.position = 'absolute'
+        h1.style.top = '10%'
+        h1.style.left = '45%'
+        h1.style.fontSize = "52px"
+        div_general.appendChild(h1)
+
+
+
+    })
+
+
+
+    
+
+
+
 }
