@@ -117,14 +117,79 @@ function mostrar_detalles(opcion){
         h1.style.fontSize = "52px"
         div_general.appendChild(h1)
 
+        var h2 = document.createElement('h2')
+        h2.innerHTML = "Marca : " + valores[2]
+        h2.style.position = 'absolute'
+        h2.style.top = '25%'
+        h2.style.left = '47%'
+        h2.style.fontSize = "22px"
+        div_general.appendChild(h2)
+
+        var h2 = document.createElement('h2')
+        h2.innerHTML = "Franquicia : " + valores[3]
+        h2.style.position = 'absolute'
+        h2.style.top = '30%'
+        h2.style.left = '47%'
+        h2.style.fontSize = "22px"
+        div_general.appendChild(h2)
+
+        var h2 = document.createElement('h2')
+        h2.innerHTML = "Descripcion : " + valores[4]
+        h2.style.position = 'absolute'
+        h2.style.top = '35%'
+        h2.style.left = '47%'
+        h2.style.fontSize = "22px"
+        div_general.appendChild(h2)
+
+        var h2 = document.createElement('h2')
+        h2.innerHTML = "Precio : " + valores[5]
+        h2.style.position = 'absolute'
+        h2.style.top = '42%'
+        h2.style.left = '47%'
+        h2.style.fontSize = "22px"
+        div_general.appendChild(h2)
+
+        var h2 = document.createElement('h2')
+        h2.innerHTML = "Stock : " + valores[6] + "Pzs"
+        h2.style.position = 'absolute'
+        h2.style.top = '47%'
+        h2.style.left = '47%'
+        h2.style.fontSize = "22px"
+        div_general.appendChild(h2)
+
+        var h2 = document.createElement('h2')
+        h2.innerHTML = "F.Lanzamiento : " + valores[7]
+        h2.style.position = 'absolute'
+        h2.style.top = '52%'
+        h2.style.left = '47%'
+        h2.style.fontSize = "22px"
+        div_general.appendChild(h2)
+
+        var h2 = document.createElement('h2')
+        h2.innerHTML = "Estado : " + valores[8]
+        h2.style.position = 'absolute'
+        h2.style.top = '57%'
+        h2.style.left = '47%'
+        h2.style.fontSize = "22px"
+        div_general.appendChild(h2)
+
+        var boton = document.createElement('button')
+        boton.textContent = "Carrito"
+        boton.style.position = "absolute"
+        boton.style.top = "65%"
+        boton.style.left = "47%"
+        div_general.appendChild(boton)
+
+        var boton2 = document.createElement('button')
+        boton2.textContent = "Copmprar"
+        boton2.style.position = "absolute"
+        boton2.style.top = "65%"
+        boton2.style.left = "64%"
+        div_general.appendChild(boton2)
 
 
     })
-
-
-
-    
-
-
-
+    .catch(error => {
+        console.log("error encontrado" , error)
+    })
 }
