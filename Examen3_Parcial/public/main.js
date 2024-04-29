@@ -250,11 +250,11 @@ function mostrar_detalles(opcion){
         div_general.appendChild(boton2)
 
         boton.addEventListener('click',function(){
-
+            Carrito(valores[5])
         })
 
         boton2.addEventListener('click' , function(){
-            
+            Comprar(valores[5])
         })
 
 
