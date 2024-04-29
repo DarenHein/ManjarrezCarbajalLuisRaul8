@@ -75,6 +75,15 @@ app.get('/mostrar/:nombre' , (req,res) => {
 	})
 
 })
-
+app.get('/precios' , (req,res) => {
+	const consulta_lana = "select precio from figura" 
+	conexion.query(consulta_lana , (error,resultado) => {
+		if(error){
+			console.log("no se pudo conectar ala base de datos")
+		}else{
+			res.json(resultado)
+		}
+	})
+})
 
 module.exports = app 

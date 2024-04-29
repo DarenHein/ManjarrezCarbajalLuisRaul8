@@ -1,16 +1,77 @@
-// todo orimero el evento de carga de elemntos de sistemas 
 
-document.addEventListener('click' , function(){
-    // ahroa primero vamos a tomar los elementos de cada imagen y con un evento click que 
-    // amplie los elementos de esa figura tomandolo de la base de datos 
+document.addEventListener('DOMContentLoaded'  , function(){
+
+    /**
+     * se agrego en el html a los botones carrito y compra el class paraq solo limitar a un funcion 
+     */
+    
     var imagen1 = document.getElementById('imagen1_1')
     var imagen2 = document.getElementById("imagen2_2")
     var imagen3 = document.getElementById("imagen3_3")
     var imagen4 = document.getElementById("imagen4_4")
     var imagen5 = document.getElementById("imagen5_5")
+    var carrito1 = document.getElementById("Carrito1")
+    var carrito2 = document.getElementById("Carrito2")
+    var carrito3 = document.getElementById("Carrito3")
+    var carrito4 = document.getElementById("Carrito4")
+    var carrito5 = document.getElementById("Carrito5")
+    var comprar1 = document.getElementById('Comprar1')
+    var comprar2 = document.getElementById('Comprar2') 
+    var comprar3 = document.getElementById('Comprar3')
+    var comprar4 = document.getElementById('Comprar4')
+    var comprar5 = document.getElementById('Comprar5')
+    var arreglo = []
+    var valores = []
 
-    // ahora los eventos de las imagenes 
+    const url_precios = 'http://127.0.0.1:3000/precios'
+    fetch(url_precios)
+    .then(response => {
+        if(!response.ok){
+            console.log('no se pudo contecrar con la url')
+        }else{
+            return  response.json()
+        }
+    })
+    .then(data => {
+        arreglo = data 
+        valores = arreglo.map(objeto => Object.values(objeto)).flat();
+        console.log(valores)
+    })
+    .catch(error => {
+        
+    })
 
+    carrito1.addEventListener('click',function(){
+        Carrito(valores[0])
+    })
+    carrito2.addEventListener('click',function(){
+        Carrito(valores[4])
+    })
+    carrito3.addEventListener('click',function(){
+        Carrito(valores[3])
+    })
+    carrito4.addEventListener('click',function(){
+        Carrito(valores[1])
+    })
+    carrito5.addEventListener('click',function(){
+        Carrito(valores[2])
+    })
+    comprar1.addEventListener('click',function(){
+        Comprar(valores[0])
+    })
+    comprar2.addEventListener('click',function(){
+        Comprar(valores[4])
+    })
+    comprar3.addEventListener('click',function(){
+        Comprar(valores[3])
+    })
+    comprar4.addEventListener('click',function(){
+        Comprar(valores[1])
+    })
+    comprar5.addEventListener('click',function(){
+        Comprar(valores[2])
+    })
+    
     imagen1.addEventListener('click' , function(){
         console.log("hola mundo 1 ")
         var opcion = 1 
@@ -40,9 +101,12 @@ document.addEventListener('click' , function(){
         var opcion = 5 
         mostrar_detalles(opcion)
     })
+    
+    
 })
 
 function mostrar_detalles(opcion){
+
     var div_general = document.getElementById("imagenes")
     var div_imagen = document.getElementById("imagen1")
     var div_imagen2 = document.getElementById("imagen2")
@@ -104,9 +168,7 @@ function mostrar_detalles(opcion){
     })
     .then(data => {
         
-        console.log(data)
         var arreglo = data 
-        var llaves = Object.keys(arreglo[0])
         var valores = Object.values(arreglo[0])
 
         var h1 = document.createElement('h1')
@@ -142,7 +204,7 @@ function mostrar_detalles(opcion){
         div_general.appendChild(h2)
 
         var h2 = document.createElement('h2')
-        h2.innerHTML = "Precio : " + valores[5]
+        h2.innerHTML = "Precio : $" + valores[5] + "MXN"
         h2.style.position = 'absolute'
         h2.style.top = '42%'
         h2.style.left = '47%'
@@ -187,9 +249,25 @@ function mostrar_detalles(opcion){
         boton2.style.left = "64%"
         div_general.appendChild(boton2)
 
+        boton.addEventListener('click',function(){
+
+        })
+
+        boton2.addEventListener('click' , function(){
+            
+        })
+
 
     })
     .catch(error => {
         console.log("error encontrado" , error)
     })
+}
+var elementos = []
+function Carrito(precio){
+    elementos.push(precio)
+    console.log(elementos)
+}
+function Comprar(precio){
+    console.log(precio)
 }
