@@ -265,9 +265,14 @@ function mostrar_detalles(opcion){
 }
 var elementos = []
 function Carrito(precio){
-    elementos.push(precio)
-    console.log(elementos)
+    var carrito = document.getElementById('carrito')
+    var div_general = document.getElementById('imagenes')
+    div_general.style.display = 'none'
+    carrito.style.display = 'block'
 }
 function Comprar(precio){
-    console.log(precio)
+    var carrito = document.getElementById('carrito')
+    var div_general = document.getElementById('imagenes')
+    div_general.style.display = 'none'
+    carrito.style.display = 'block'
 }
