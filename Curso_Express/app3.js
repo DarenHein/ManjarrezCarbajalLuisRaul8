@@ -12,7 +12,7 @@ const app = express()
 // necesitamos los metodos que permitan leer texto json y formularios 
 app.use(express.text())
 app.use(express.json())
-app.use(express.urlencoded({extend : false}))
+app.use(express.urlencoded({extend : true}))
 
 // ahroa creamos un metodo post que lee lo que manda el lciente 
 app.post('/cliente' , (req,res) => {
