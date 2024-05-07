@@ -31,6 +31,11 @@ app.get('/ruta2' ,(req,res) => {
 	console.log(marca)
 })
 
+// tambien podemos tomar todos los queris que mande el cliente en un objeto 
+app.get('/ruta3' , (req,res) => {
+	console.log(req.query)
+})
+
 app.listen(3000,() => {
 	console.log("aplicacion corriendo en el puerto 3000")
 })
