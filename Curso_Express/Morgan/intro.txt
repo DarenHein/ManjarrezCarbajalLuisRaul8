@@ -1,0 +1,18 @@
+ __  __                             
+|  \/  | ___  _ __ __ _  __ _ _ __  
+| |\/| |/ _ \| '__/ _` |/ _` | '_ \ 
+| |  | | (_) | | | (_| | (_| | | | |
+|_|  |_|\___/|_|  \__, |\__,_|_| |_|
+                  |___/             
+
+es un midleware que hace las funciones de un logger 
+pero primero que es un logger un logeer es un midleware 
+que lleva un registro de lo que el cliente solicita y como lo solicita 
+
+un ejemplo 
+
+con req.url nos devuelve la url que visita el cliente 
+con req.method nos devuelve el metodo que nos manda el cliente
+(get,push,put,delete,patch)
+
+morgan ajilisa esa tarea 

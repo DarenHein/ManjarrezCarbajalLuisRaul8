@@ -8,3 +8,14 @@
 
 En esta hoja are que todo lso documentos que suab sean relacionados 
 al Curso de express 
+
+comandos o glosario 
+
+	+ npm init -y crea un packes.json que contiene los metadatos de nuestra
+	aplicacion 
+	+ metadatos son aquellos datos como : 
+		+ nombre de nuestro proyecto 
+		+ la version 
+		+ las dependencias ocupadas 
+		+ el programdor acargo 
+	
