@@ -1,0 +1,18 @@
+ ____             _        _       
+/ ___|  ___   ___| | _____| |_ ___ 
+\___ \ / _ \ / __| |/ / _ \ __/ __|
+ ___) | (_) | (__|   <  __/ |_\__ \
+|____/ \___/ \___|_|\_\___|\__|___/
+                                   
+
+
+los socktes son comunicaciones entre dos dispositivos 
+como cunado hablamos por celular 
+el celuar == pc y el numero == ip 
+eso es la formanaloga de entenderlo 
+
+que necesitamos 
+
+direccion ip -> direccion de mi casa  
+puerto -> el numero de mi puerta 
+protocolo -> define el metodo de comunicacion el mas ocupado tcp 
