@@ -1,0 +1,12 @@
+                            
+ #      ""#           #     
+ #mmm     #     mmm   #mmm  
+ #" "#    #    #" "#  #" "# 
+ #   #    #    #   #  #   # 
+ ##m#"    "mm  "#m#"  ##m#" 
+                            
+                 
+es un archivo binario que significa -> binary large objetc -> objeto largo binario 
+representa  datos binarios de cuaquier tamaño y caulquier formato 
+
+el blo es una bolsa sellada que almacena el archivo o lo protege 
