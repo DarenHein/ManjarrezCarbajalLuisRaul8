@@ -1,0 +1,54 @@
+Claro, Luis. Aquí tienes 50 ejercicios de JavaScript para que practiques. Estos ejercicios van desde niveles básicos hasta intermedios y avanzados:
+
+1. Imprime "Hola, Mundo!" en la consola.
+2. Declara una variable llamada `nombre` y asígnale tu nombre. Imprime la variable en la consola.
+3. Suma dos números y muestra el resultado en la consola.
+4. Crea una función que reciba dos números como argumentos y retorne su suma.
+5. Crea una función que reciba un número y retorne si es par o impar.
+6. Declara un array con cinco elementos y muestra cada uno en la consola.
+7. Crea una función que reciba un array de números y retorne el mayor.
+8. Escribe una función que reciba un string y retorne el número de vocales que contiene.
+9. Implementa una función que reciba un string y lo retorne en reversa.
+10. Crea una función que calcule el factorial de un número.
+11. Escribe una función que verifique si un string es un palíndromo.
+12. Implementa una función que reciba un array y retorne un nuevo array con los elementos duplicados eliminados.
+13. Crea una función que reciba una matriz (array de arrays) y retorne su transpuesta.
+14. Escribe una función que reciba un número y retorne su representación en binario.
+15. Crea una función que reciba un array de números y retorne la suma de sus elementos.
+16. Implementa una función que encuentre el número de elementos únicos en un array.
+17. Escribe una función que convierta un número romano en un número decimal.
+18. Crea una función que reciba un array y un número y retorne un nuevo array con los elementos mayores al número dado.
+19. Implementa una función que ordene un array de números de menor a mayor.
+20. Escribe una función que convierta un string en mayúsculas sin usar el método `toUpperCase`.
+21. Crea una función que reciba un array de números y retorne el promedio.
+22. Implementa una función que verifique si dos strings son anagramas.
+23. Escribe una función que encuentre la palabra más larga en un string.
+24. Crea una función que divida un string en un array de palabras.
+25. Implementa una función que encuentre el segundo número más grande en un array.
+26. Escribe una función que reciba dos arrays y retorne un array con los elementos comunes.
+27. Crea una función que reciba un array y retorne un nuevo array con los elementos en orden inverso.
+28. Implementa una función que encuentre la mediana de un array de números.
+29. Escribe una función que reciba un array de números y retorne los dos números cuya suma sea más cercana a cero.
+30. Crea una función que reciba un array de strings y retorne un nuevo array con los strings ordenados por longitud.
+31. Implementa una función que calcule la raíz cuadrada de un número sin usar `Math.sqrt`.
+32. Escribe una función que reciba una cadena y retorne un objeto con la frecuencia de cada carácter.
+33. Crea una función que reciba un array de objetos y retorne el objeto con el valor más alto en una propiedad específica.
+34. Implementa una función que reciba un array y un número, y retorne el índice del número en el array o -1 si no está presente.
+35. Escribe una función que reciba un número y retorne un array con sus factores primos.
+36. Crea una función que reciba un array de números y retorne un nuevo array con los números ordenados en forma descendente.
+37. Implementa una función que encuentre el primer número faltante en una secuencia ordenada de números.
+38. Escribe una función que reciba un array de strings y retorne el string que aparece más veces.
+39. Crea una función que reciba un array de números y retorne un nuevo array con los números elevados al cuadrado.
+40. Implementa una función que calcule el máximo común divisor (MCD) de dos números.
+41. Escribe una función que convierta un número decimal a hexadecimal.
+42. Crea una función que reciba un array de números y retorne los dos números cuya diferencia sea mayor.
+43. Implementa una función que verifique si un número es un número perfecto.
+44. Escribe una función que reciba un string y retorne el número de palabras que contiene.
+45. Crea una función que reciba un array de números y retorne el número que más veces aparece.
+46. Implementa una función que verifique si un array es una permutación de otro array.
+47. Escribe una función que reciba un array de números y retorne un nuevo array con los números multiplicados por su índice.
+48. Crea una función que reciba un array de números y retorne un nuevo array con los números en posiciones pares.
+49. Implementa una función que convierta un string en CamelCase.
+50. Escribe una función que reciba un array de números y retorne el número más cercano a un número dado.
+
+¡Buena suerte resolviendo estos ejercicios!
