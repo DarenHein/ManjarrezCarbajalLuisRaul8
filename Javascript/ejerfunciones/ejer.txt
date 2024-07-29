@@ -1,0 +1,37 @@
+¡Claro, Luis! Aquí tienes una serie de ejercicios básicos para que practiques con funciones anónimas y funciones flecha. No incluiré las respuestas para que puedas resolverlos por tu cuenta.
+
+### Ejercicios con Funciones Anónimas
+
+1. **Suma de dos números**:
+   - Crea una función anónima que tome dos números y devuelva su suma. Asigna esta función a una variable llamada `suma`.
+
+2. **Verificar paridad**:
+   - Crea una función anónima que tome un número y devuelva `true` si es par y `false` si es impar. Asigna esta función a una variable llamada `esPar`.
+
+3. **Multiplicación de números en un array**:
+   - Crea una función anónima que tome un array de números y devuelva un nuevo array con cada número multiplicado por 2. Asigna esta función a una variable llamada `multiplicaPorDos`.
+
+4. **Filtrar números mayores que 10**:
+   - Crea una función anónima que tome un array de números y devuelva un nuevo array con solo los números mayores que 10. Asigna esta función a una variable llamada `filtrarMayoresQueDiez`.
+
+5. **Concatenar cadenas**:
+   - Crea una función anónima que tome dos cadenas y devuelva la concatenación de ambas. Asigna esta función a una variable llamada `concatenaCadenas`.
+
+### Ejercicios con Funciones Flecha
+
+1. **División de dos números**:
+   - Crea una función flecha que tome dos números y devuelva el resultado de dividir el primero por el segundo. Asigna esta función a una variable llamada `divide`.
+
+2. **Calcular el cuadrado de un número**:
+   - Crea una función flecha que tome un número y devuelva su cuadrado. Asigna esta función a una variable llamada `cuadrado`.
+
+3. **Sumar todos los elementos de un array**:
+   - Crea una función flecha que tome un array de números y devuelva la suma de todos sus elementos. Asigna esta función a una variable llamada `sumaTotal`.
+
+4. **Convertir a mayúsculas**:
+   - Crea una función flecha que tome una cadena y devuelva la cadena en mayúsculas. Asigna esta función a una variable llamada `convertirAMayusculas`.
+
+5. **Encontrar el número más pequeño**:
+   - Crea una función flecha que tome un array de números y devuelva el número más pequeño. Asigna esta función a una variable llamada `numeroMasPequeno`.
+
+¡Buena suerte con los ejercicios! Si necesitas alguna pista o explicación adicional sobre algún concepto, no dudes en preguntar.
