@@ -1,0 +1,33 @@
+¡Claro! Aquí tienes 10 ejercicios que combinan `reduce`, `filter` y `map` para que puedas practicar:
+
+### Ejercicio 1: Sumar todos los números en un array
+Usa `reduce` para sumar todos los números en el array `[10, 20, 30, 40, 50]`.
+
+### Ejercicio 2: Filtrar números pares
+Usa `filter` para obtener un nuevo array con solo los números pares del array `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`.
+
+### Ejercicio 3: Duplicar valores
+Usa `map` para crear un nuevo array donde cada número del array `[1, 2, 3, 4, 5]` esté duplicado.
+
+### Ejercicio 4: Filtrar objetos por edad
+Dado el array de objetos `personas = [{ nombre: 'Luis', edad: 30 }, { nombre: 'Ana', edad: 25 }, { nombre: 'Pedro', edad: 35 }]`, usa `filter` para obtener solo las personas mayores de 30 años.
+
+### Ejercicio 5: Crear un string con nombres
+Dado el array de objetos `personas = [{ nombre: 'Luis' }, { nombre: 'Ana' }, { nombre: 'Pedro' }]`, usa `map` y `join` para crear un string con todos los nombres separados por comas.
+
+### Ejercicio 6: Calcular el promedio de edades
+Dado el array de objetos `personas = [{ nombre: 'Luis', edad: 30 }, { nombre: 'Ana', edad: 25 }, { nombre: 'Pedro', edad: 35 }]`, usa `reduce` para calcular el promedio de las edades.
+
+### Ejercicio 7: Filtrar y transformar objetos
+Dado el array `productos = [{ nombre: 'Laptop', precio: 800 }, { nombre: 'Mouse', precio: 20 }, { nombre: 'Teclado', precio: 50 }]`, usa `filter` para obtener solo los productos que cuestan más de 30 y luego usa `map` para crear un nuevo array con solo los nombres de esos productos.
+
+### Ejercicio 8: Obtener la suma de los cuadrados
+Usa `map` para elevar al cuadrado cada número en el array `[2, 4, 6, 8]`, y luego usa `reduce` para obtener la suma de esos cuadrados.
+
+### Ejercicio 9: Encontrar el mayor número
+Usa `reduce` para encontrar el mayor número en el array `[12, 5, 8, 21, 3]`.
+
+### Ejercicio 10: Filtrar números negativos y sumar
+Dado el array de números `[10, -5, 7, -3, 8]`, usa `filter` para obtener solo los números negativos y luego usa `reduce` para calcular la suma de esos números negativos.
+
+Estos ejercicios abarcan una variedad de usos de `map`, `filter` y `reduce`, y te ayudarán a fortalecer tu comprensión de cómo manipular arrays en JavaScript. ¡Si necesitas ayuda con alguno de ellos, no dudes en decírmelo!
