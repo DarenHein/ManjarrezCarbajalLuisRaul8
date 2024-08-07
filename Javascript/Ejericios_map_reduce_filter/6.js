@@ -22,4 +22,14 @@ const personas = [
 
 const edad = personas.reduce((acum , personas) => acum + personas["edad"] , 0)
 
+/**
+ * 
+ * edad es es la nueva variable que almacena el proamdio 
+ * reduce metodo array que reduce todos los elementos del array original a 1 
+ * acum es una varible qeu suma y acumula el resultado final 
+ * peronas hace referecia a caa elemento del array y marcaamos edad por que es la llave 
+ * 0 es la iniciacion de acum 
+
+*/
+
 console.log(edad / personas.length)

@@ -1,0 +1,85 @@
+¡Claro, Luis! Aquí tienes una lista de 50 ejercicios para principiantes en JavaScript. Estos ejercicios te ayudarán a reforzar conceptos básicos y mejorar tus habilidades.
+
+### Ejercicios de JavaScript para Principiantes
+
+#### Variables y Tipos de Datos
+
+1. **Declarar Variables**: Declara variables de tipo `string`, `number`, `boolean`, `null`, y `undefined`.
+2. **Concatenación de Strings**: Crea una variable que contenga una cadena de texto resultante de concatenar otras dos cadenas.
+3. **Operaciones Matemáticas Básicas**: Realiza sumas, restas, multiplicaciones y divisiones con variables de tipo `number`.
+4. **Conversión de Tipos**: Convierte una cadena de texto que contiene un número a un tipo `number`.
+5. **Interpolación de Strings**: Usa template literals para crear una cadena de texto que incluya variables.
+
+#### Condicionales
+
+6. **Condicional Simple**: Escribe una estructura `if` que verifique si una variable es mayor que 10.
+7. **Condicional Compuesto**: Escribe una estructura `if-else` que verifique si una variable es par o impar.
+8. **Condicional Múltiple**: Usa `else if` para evaluar múltiples condiciones sobre una variable.
+9. **Operador Ternario**: Utiliza el operador ternario para asignar un valor a una variable basada en una condición.
+10. **Condicional Anidado**: Crea condicionales anidados para verificar si una variable está dentro de un rango.
+
+#### Bucles
+
+11. **Bucle For**: Crea un bucle `for` que imprima los números del 1 al 10.
+12. **Bucle While**: Crea un bucle `while` que imprima los números del 10 al 1.
+13. **Bucle Do-While**: Implementa un bucle `do-while` que imprima "Hola" cinco veces.
+14. **Bucle For...of**: Usa `for...of` para recorrer un array e imprimir cada elemento.
+15. **Bucle For...in**: Usa `for...in` para recorrer un objeto e imprimir sus propiedades y valores.
+
+#### Funciones
+
+16. **Declarar Función**: Declara una función que imprima "Hola, Mundo".
+17. **Función con Parámetros**: Crea una función que reciba dos números y devuelva su suma.
+18. **Función con Retorno**: Escribe una función que reciba un número y devuelva su cuadrado.
+19. **Función Anónima**: Declara una función anónima que imprima "Función Anónima".
+20. **Arrow Function**: Convierte una función regular a una arrow function.
+
+#### Arrays
+
+21. **Crear Array**: Declara un array con cinco elementos de tipo `string`.
+22. **Acceder a Elementos**: Accede al tercer elemento de un array.
+23. **Modificar Elementos**: Cambia el valor del primer elemento de un array.
+24. **Método push**: Añade un nuevo elemento al final de un array.
+25. **Método pop**: Elimina el último elemento de un array.
+
+#### Métodos de Arrays
+
+26. **Método shift**: Elimina el primer elemento de un array.
+27. **Método unshift**: Añade un nuevo elemento al inicio de un array.
+28. **Método slice**: Usa `slice` para crear un nuevo array con los primeros tres elementos de un array existente.
+29. **Método splice**: Usa `splice` para eliminar dos elementos del array a partir de la posición 1.
+30. **Método forEach**: Usa `forEach` para imprimir cada elemento de un array.
+
+#### Objetos
+
+31. **Crear Objeto**: Declara un objeto con tres propiedades: `nombre`, `edad`, y `ciudad`.
+32. **Acceder a Propiedades**: Accede al valor de la propiedad `nombre` de un objeto.
+33. **Modificar Propiedades**: Cambia el valor de la propiedad `edad` de un objeto.
+34. **Añadir Propiedades**: Añade una nueva propiedad `país` a un objeto.
+35. **Eliminar Propiedades**: Elimina la propiedad `ciudad` de un objeto.
+
+#### Métodos de Objetos
+
+36. **Método Object.keys**: Usa `Object.keys` para obtener un array con las claves de un objeto.
+37. **Método Object.values**: Usa `Object.values` para obtener un array con los valores de un objeto.
+38. **Método Object.entries**: Usa `Object.entries` para obtener un array de pares `[clave, valor]` del objeto.
+39. **Método hasOwnProperty**: Verifica si un objeto tiene una propiedad específica.
+40. **Método Object.assign**: Usa `Object.assign` para copiar las propiedades de un objeto a otro.
+
+#### Manipulación del DOM
+
+41. **Seleccionar Elemento**: Usa `document.getElementById` para seleccionar un elemento del DOM.
+42. **Modificar Contenido**: Cambia el texto de un elemento del DOM seleccionado con `innerText`.
+43. **Modificar Estilos**: Cambia el color de fondo de un elemento del DOM.
+44. **Añadir Evento**: Añade un event listener que imprima "Hiciste clic" al hacer clic en un botón.
+45. **Crear Elemento**: Crea un nuevo elemento `div` y añádelo al DOM.
+
+#### Otros
+
+46. **Fecha y Hora**: Usa `Date` para obtener la fecha y hora actual.
+47. **Temporizador**: Usa `setTimeout` para imprimir "Hola después de 3 segundos" después de 3 segundos.
+48. **Intervalo**: Usa `setInterval` para imprimir "Hola cada segundo" cada segundo.
+49. **Alertas**: Usa `alert` para mostrar un mensaje emergente al cargar la página.
+50. **Confirmaciones**: Usa `confirm` para mostrar un mensaje de confirmación y registrar si el usuario acepta o cancela.
+
+Estos ejercicios te ayudarán a solidificar tus conocimientos básicos en JavaScript y a prepararte para desafíos más avanzados. ¡Buena suerte!
