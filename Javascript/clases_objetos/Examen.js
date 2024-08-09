@@ -99,7 +99,7 @@ class Coche {
 }
 
 // ahora hacemos 3 instancias de la tesis 
-
+    
 const coche = new Coche("Marca","Modelo",1992)
 coche.detalles()
 
@@ -107,11 +107,128 @@ const coche2 = new Coche("Marca","Modelo",1992)
 coche2.detalles()
 // 5. **Crea una clase `CuentaBancaria` con propiedades `titular` y `saldo`. Agrega métodos `depositar` y `retirar` que modifiquen el saldo adecuadamente. Asegúrate de que no se pueda retirar más dinero del que hay en la cuenta.**
 
+class CuentaBancaria {
+    #titular 
+    #saldo
+    constructor(titular,saldo){
+        this.#titular = titular 
+        this.#saldo = 1000
+    }
+
+    saldo(){
+        console.log("El saldo de la cuneta es de " , this.#saldo)
+    }
+
+    retiro(cantidad){
+        if(cantidad > this.#saldo){
+            console.log("no se peude sacar cantidad mas grande que lo que se tiene")
+        }else if(cantidad <= 0){
+            console.log("no se pueden sacar cantidads menores a 0 o igualesa a 0")
+        }else {
+            console.log("Saldo actual " , this.#saldo)  
+            this.#saldo = this.#saldo - cantidad
+            console.log("Nuevo Saldo " , this.#saldo)
+            
+        }
+    }
+    deposito(cantidad){
+        if(cantidad <= 0){
+            console.log(" no puedes ingresar cantidaddes negativas o cero ")
+        }else if(cantidad > 5000){
+            console.log(" no puedes depositar cantidades mayores a $5000")
+        }else{
+            console.log("Saldo actual " , this.#saldo)  
+            this.#saldo = this.#saldo + cantidad
+            console.log("Nuevo Saldo " , this.#saldo)
+        }
+    }
+}
+
+const persona2 = new CuentaBancaria("Luis")
+persona2.saldo()
+persona2.retiro(-580)
+persona2.deposito(900)
+
+
+
 // 6. **Define una clase `Animal` con un método `hacerSonido`. Luego, crea dos clases que extiendan `Animal`: `Perro` y `Gato`, cada una con su propia implementación del método `hacerSonido`. Crea instancias de `Perro` y `Gato` y llama a sus métodos `hacerSonido`.**
+
+class Animal{
+    hacersonido(){
+        console.log("hace sonido")
+    }
+}
+
+// hacer dos clases que hereden y hacr sobrescitura de miembros de esta clase 
+class Perro extends Animal{
+    hacersonido(){
+        console.log("gua gua")
+    }
+}
+
+class Gato extends Animal {
+    hacersonido(){
+        console.log("miua miua")
+    }
+}
+
+// ahora hacemos la instancia de las calses 
+const perro = new Perro()
+perro.hacersonido()
+const gato = new Gato()
+gato.hacersonido()
 
 // 7. **Crea una clase `Rectangulo` con propiedades `ancho` y `alto`, y un método `calcularArea` que devuelva el área del rectángulo. Luego, crea una instancia de `Rectangulo` y llama al método `calcularArea`.**
 
+class Rectangulo{
+    #altura 
+    #base 
+    constructor(altura,base){
+        this.#altura = altura 
+        this.#base = base 
+    }
+
+    calcularArea(){
+        return this.#altura * this.#base
+    }
+}
+
+// ahora hacemos la instancia de lac lase 
+
+const rectangulo = new Rectangulo(12,12)
+const area = rectangulo.calcularArea()
+console.log(area)
+
 // 8. **Implementa una clase `Calculadora` con métodos `sumar`, `restar`, `multiplicar` y `dividir`. Cada método debe aceptar dos argumentos y devolver el resultado de la operación correspondiente.**
+
+class Calculadora {
+    suma(num,num2){
+        return num + num2
+    }
+    resta(num,num2){
+        return num - num2 
+    }
+    multiplicacion(num,num2){
+        return num * num2 
+    }
+
+    divicion(num, num2){
+        return num / num2 
+    }
+}
+
+// ahora hacemos la instacia de las clases 
+
+const operaciones = new Calculadora()
+const suma = operaciones.suma(12,2)
+const resta = operaciones.resta(0,0)
+const multi = operaciones.multiplicacion(12,12)
+const divi =  operaciones.divicion(1,2)
+
+console.log(suma)
+console.log(resta)
+console.log(multi)
+console.log(divi)
 
 // 9. **Crea una clase `Libro` con propiedades `titulo`, `autor` y `anio`. Agrega un método `info` que imprima un resumen del libro. Luego, crea tres instancias de `Libro` y llama al método `info` para cada una.**
 
