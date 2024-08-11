@@ -1,0 +1,16 @@
+
+    _        _                            _       
+   / \   ___(_)_ __   ___ _ __ ___  _ __ (_) __ _ 
+  / _ \ / __| | '_ \ / __| '__/ _ \| '_ \| |/ _` |
+ / ___ \\__ \ | | | | (__| | | (_) | | | | | (_| |
+/_/   \_\___/_|_| |_|\___|_|  \___/|_| |_|_|\__,_|
+
+
+que es la asincronia 
+	
+	 es la forma en que los programas pueden hacer multiples tareas sin 
+	 romper la tarea principal 
+
+	 analogia de las pizzas 
+	 en lo que pido mi pizza puedo hacer multiples tareas 
+	 y cunado la recibo como que seria la tarea princiapal 
