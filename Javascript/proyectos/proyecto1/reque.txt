@@ -1,0 +1,8 @@
+1. Contador con Retraso
+Descripción: Crea una función que muestre un contador en la consola que se incremente cada segundo. Usa setTimeout para hacer una pausa de 1 segundo entre cada incremento.
+
+Requisitos:
+
+Usa un callback para mostrar el contador después de cada segundo.
+Asegúrate de que el contador se detenga después de 10 segundos.
+Pista: Puedes usar setTimeout dentro de una función que llame a sí misma.
