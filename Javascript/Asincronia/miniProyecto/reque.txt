@@ -1,0 +1,28 @@
+Aquí tienes los requerimientos para el mini proyecto de un **Simulador de Registro de Usuarios**:
+
+### Requerimientos del Proyecto
+
+1. **Función `validarNombreUsuario`**:
+   - Debe tomar un nombre de usuario y un callback.
+   - Debe simular la verificación de si el nombre de usuario ya está en uso.
+   - Si el nombre de usuario está en uso, debe llamar al callback con un mensaje de error.
+   - Si el nombre de usuario está disponible, debe llamar al callback con un mensaje de éxito.
+
+2. **Función `validarContrasena`**:
+   - Debe tomar una contraseña y un callback.
+   - Debe simular la validación de la contraseña para cumplir con ciertos requisitos (por ejemplo, longitud mínima).
+   - Si la contraseña no cumple con los requisitos, debe llamar al callback con un mensaje de error.
+   - Si la contraseña es válida, debe llamar al callback con un mensaje de éxito.
+
+3. **Función `registrarUsuario`**:
+   - Debe tomar un nombre de usuario, una contraseña y un callback.
+   - Debe primero validar el nombre de usuario utilizando la función `validarNombreUsuario`.
+   - Si el nombre de usuario es válido, debe validar la contraseña utilizando la función `validarContrasena`.
+   - Si tanto el nombre de usuario como la contraseña son válidos, debe simular el registro exitoso del usuario llamando al callback con un mensaje de éxito.
+   - Si ocurre algún error en cualquiera de los pasos, debe manejar el error adecuadamente llamando al callback con un mensaje de error.
+
+4. **Ejecución del Proyecto**:
+   - Debes crear una llamada a la función `registrarUsuario`, proporcionando un nombre de usuario y una contraseña.
+   - Debes manejar el resultado, mostrando mensajes apropiados en caso de error o éxito.
+
+Estos requerimientos te guiarán para construir el proyecto paso a paso. ¡Buena suerte!
