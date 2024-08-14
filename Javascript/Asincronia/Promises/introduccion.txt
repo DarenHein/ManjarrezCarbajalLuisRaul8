@@ -1,0 +1,23 @@
+ ____                      _               
+|  _ \ _ __ ___  _ __ ___ (_)___  ___  ___ 
+| |_) | '__/ _ \| '_ ` _ \| / __|/ _ \/ __|
+|  __/| | | (_) | | | | | | \__ \  __/\__ \
+|_|   |_|  \___/|_| |_| |_|_|___/\___||___/
+
+
+que son los promises 
+
+como en la vida real 
+
+analogia 
+
+tu mama te dice que si cumpes en la escuela ella te compra algo 
+
+la promesa es esa sopresa 
+
+hay de doscaminos 
+
+la cumples -> resolve 
+no cumpoles -> reject 
+
+se ocupan para no llenar de callback el codigo                                            
