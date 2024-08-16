@@ -231,7 +231,60 @@ console.log(multi)
 console.log(divi)
 
 // 9. **Crea una clase `Libro` con propiedades `titulo`, `autor` y `anio`. Agrega un método `info` que imprima un resumen del libro. Luego, crea tres instancias de `Libro` y llama al método `info` para cada una.**
+class Libro {
+    #titulo
+    #autor
+    #ano
+    constructor(titulo,autor,ano){
+        this.#titulo = titulo
+        this.#autor = autor 
+        this.#ano = ano 
+    }
+
+    // metodo info que devuelve la infromacion de l libro 
+    info(){
+        console.log("Autor " , this.#autor)
+        console.log("titulo " , this.#titulo)
+        console.log("Ano de lanzamiento " , this.#ano)
+    }
+}
+
+// ahora hacemos la insancia de lso libros 
+
+// libro 1 
+const libro1 = new Libro("Harry potter " , "autor " , 1999)
+const libro2 = new Libro("El llano en llamas" , "sin especificar " , 1067)
+const libro3 = new Libro("Libro 3 " , "sinespecificar autor " , 1995)
+
+// ahora mandamos a llmar a los metodso de intancia de cada objeto 
+libro1.info()
+libro2.info()
+libro3.info()
 
 // 10. **Define una clase `Empleado` con propiedades `nombre` y `salario`. Agrega un método `aumentarSalario` que acepte un porcentaje y aumente el salario del empleado en ese porcentaje. Crea una instancia de `Empleado` y utiliza el método `aumentarSalario`.**
+
+
+class Empleado {
+    #nombre 
+    #salario
+    constructor(nombre , salario){
+        this.#nombre = nombre 
+        this.#salario = 1000
+    }
+
+    porcentaje(numero) {
+        let porce = this.#salario * (numero / 100);
+        let resultado = porce + this.#salario;
+        return resultado;
+    }
+    
+}
+
+// hacemos la intancia del 
+
+const empleado = new Empleado("Luis")
+let salario = empleado.porcentaje(12)
+console.log("Salario sueb un 12 porcentej quedaria en -> " , salario)
+
 
 // Espero que estos ejercicios sean útiles para poner en práctica tus conocimientos sobre Programación Orientada a Objetos en JavaScript. ¡Buena suerte!

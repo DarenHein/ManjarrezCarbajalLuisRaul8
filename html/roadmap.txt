@@ -1,0 +1,84 @@
+Aquí tienes un temario básico de HTML que te puede servir para empezar o enseñar a otros:
+
+### **1. Introducción a HTML**
+   - ¿Qué es HTML?
+   - Estructura básica de un documento HTML
+   - Etiquetas HTML: `<html>`, `<head>`, `<body>`
+   - Diferencia entre HTML, CSS y JavaScript
+
+### **2. Etiquetas Básicas**
+   - Encabezados: `<h1>` a `<h6>`
+   - Párrafos: `<p>`
+   - Enlaces: `<a href="">`
+   - Imágenes: `<img src="" alt="">`
+   - Listas:
+     - Listas ordenadas: `<ol>` `<li>`
+     - Listas desordenadas: `<ul>` `<li>`
+
+### **3. Estructura de la Página**
+   - Divisiones: `<div>`
+   - Secciones semánticas: `<header>`, `<footer>`, `<section>`, `<article>`, `<nav>`, `<aside>`
+   - Agrupación de contenido: `<span>`, `<br>`, `<hr>`
+
+### **4. Formularios**
+   - Creación de formularios: `<form>`
+   - Campos de entrada:
+     - Texto: `<input type="text">`
+     - Correo electrónico: `<input type="email">`
+     - Contraseña: `<input type="password">`
+     - Botones: `<input type="submit">`, `<button>`
+   - Textareas: `<textarea>`
+   - Selectores: `<select>`, `<option>`
+   - Casillas de verificación: `<input type="checkbox">`
+   - Botones de radio: `<input type="radio">`
+   - Etiquetas: `<label>`
+
+### **5. Tablas**
+   - Creación de tablas: `<table>`
+   - Filas y columnas: `<tr>`, `<td>`
+   - Encabezados de tabla: `<th>`
+   - Agrupación de columnas: `<thead>`, `<tbody>`, `<tfoot>`
+   - Atributos comunes: `border`, `cellpadding`, `cellspacing`
+
+### **6. Enlaces y Navegación**
+   - Enlaces internos y externos
+   - Enlaces a secciones de la misma página (anclas)
+   - Enlaces en nuevas pestañas: `target="_blank"`
+   - Navegación básica entre páginas
+
+### **7. Multimedia en HTML**
+   - Insertar imágenes: `<img>`
+   - Insertar videos: `<video>`
+   - Insertar audio: `<audio>`
+   - Atributos comunes (autoplay, controls, loop)
+
+### **8. Atributos Globales**
+   - Identificadores (`id`)
+   - Clases (`class`)
+   - Atributos de estilo (`style`)
+   - Atributos de acceso (`title`, `alt`, `data-*`)
+
+### **9. Metadatos y SEO Básico**
+   - Etiquetas meta: `<meta>`
+   - Títulos de página: `<title>`
+   - Descripciones: `<meta name="description">`
+   - Palabras clave: `<meta name="keywords">`
+
+### **10. Buenas Prácticas y Accesibilidad**
+   - Estructura limpia y semántica
+   - Uso correcto de encabezados
+   - Atributos de accesibilidad (aria-label, alt, title)
+   - Validación de HTML
+
+### **11. Introducción a HTML5**
+   - Etiquetas nuevas en HTML5
+   - Canvas: `<canvas>`
+   - Etiquetas de video y audio en HTML5
+   - Almacenamiento local: `localStorage` y `sessionStorage`
+
+### **12. Proyecto Final**
+   - Creación de una página web básica
+   - Integración de lo aprendido (texto, imágenes, enlaces, formularios, tablas, etc.)
+   - Pruebas y validación
+
+Este temario cubre los aspectos más fundamentales de HTML y te proporcionará una base sólida para avanzar en el desarrollo web. ¡Espero que te sea útil!
